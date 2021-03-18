@@ -3,9 +3,11 @@
   "version": "0.0.1",
   "private": true,
   "description": "Website for Christian",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --watch --config webpack.dev.js",
+    "start": "webpack serve --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js"
   },
   "repository": {
     "type": "git",
@@ -16,5 +18,9 @@
   "bugs": {
     "url": "https://github.com/roosta/christian/issues"
   },
-  "homepage": "https://github.com/roosta/christian#readme"
+  "homepage": "https://github.com/roosta/christian#readme",
+  "devDependencies": {
+    "webpack": "^5.26.3",
+    "webpack-cli": "^4.5.0"
+  }
 }
