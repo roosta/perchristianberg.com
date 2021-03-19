@@ -6,10 +6,14 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {},
-     backgroundColor: theme => ({
-       ...theme('colors'),
-       'primary': '#434343',
-      })
+    backgroundColor: theme => ({
+      ...theme('colors'),
+      'primary': '#434343',
+    }),
+    fontFamily: {
+      'display': ['Raleway Bold', 'sans-serif'],
+      'body': ['Open Sans', 'sans-serif'],
+    }
   },
   variants: {
     extend: {},

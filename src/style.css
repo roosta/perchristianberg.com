@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: Raleway Bold;
+    font-weight: 700;
+    src: url(./Raleway-Bold.ttf) format("truetype");
+  }
+
+  @font-face {
+    font-family: Open Sans Regular;
+    font-weight: 400;
+    src: url(./OpenSans-Regular.ttf) format("truetype");
+  }
+}
