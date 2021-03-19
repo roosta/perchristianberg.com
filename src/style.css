@@ -15,3 +15,7 @@
     src: url(./OpenSans-Regular.ttf) format("truetype");
   }
 }
+
+.title {
+  font-size: 112px;
+}
