@@ -22,7 +22,8 @@ module.exports = {
       'title4': ['7rem', 0.8],
       'title3': ['5.7rem', 0.8],
       'title2': ['4.4rem', 0.8],
-      'title1': ['4.2rem', 0.8]
+      'title1': ['3rem', 0.8],
+      'title': ['2.5rem', 0.8]
     },
     screens: {
       ...defaultTheme.screens,
