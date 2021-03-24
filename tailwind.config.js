@@ -1,3 +1,5 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 module.exports = {
   purge: [
     './src/**/*.html',
@@ -11,9 +13,13 @@ module.exports = {
       'primary': '#434343',
     }),
     fontFamily: {
-      'display': ['Raleway Bold', 'sans-serif'],
-      'menu': ['Raleway Regular', 'sans-serif'],
-      'body': ['Open Sans', 'sans-serif'],
+      'display': ['Raleway Bold', ...defaultTheme.fontFamily.sans],
+      'menu': ['Raleway Regular', ...defaultTheme.fontFamily.sans],
+      'body': ['Open Sans', ...defaultTheme.fontFamily.sans],
+    },
+    fontSize: {
+      ...defaultTheme.fontSize,
+      'title': ['7rem', 0.8],
     }
   },
   variants: {

@@ -22,11 +22,6 @@
   }
 }
 
-.title {
-  font-size: 112px;
-  line-height: 0.8;
-}
-
 @layer components {
   .menu-item {
     @apply font-menu text-white capitalize text-opacity-50 hover:text-opacity-100;
