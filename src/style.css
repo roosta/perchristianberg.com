@@ -25,3 +25,9 @@
 .title {
   font-size: 112px;
 }
+
+@layer components {
+  .menu-item {
+    @apply font-menu text-white capitalize text-opacity-50 hover:text-opacity-100;
+  }
+}
