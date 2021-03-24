@@ -10,6 +10,12 @@
   }
 
   @font-face {
+    font-family: Raleway Regular;
+    font-weight: 400;
+    src: url(./Raleway-Regular.ttf) format("truetype");
+  }
+
+  @font-face {
     font-family: Open Sans Regular;
     font-weight: 400;
     src: url(./OpenSans-Regular.ttf) format("truetype");

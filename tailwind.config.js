@@ -12,6 +12,7 @@ module.exports = {
     }),
     fontFamily: {
       'display': ['Raleway Bold', 'sans-serif'],
+      'menu': ['Raleway Regular', 'sans-serif'],
       'body': ['Open Sans', 'sans-serif'],
     }
   },
