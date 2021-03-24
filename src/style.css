@@ -24,6 +24,7 @@
 
 .title {
   font-size: 112px;
+  line-height: 0.85;
 }
 
 @layer components {
