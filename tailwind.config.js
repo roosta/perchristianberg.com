@@ -19,16 +19,15 @@ module.exports = {
     },
     fontSize: {
       ...defaultTheme.fontSize,
-      'title4': ['7rem', 0.8],
-      'title3': ['5.7rem', 0.8],
-      'title2': ['4.4rem', 0.8],
-      'title1': ['3rem', 0.8],
-      'title': ['2.5rem', 0.8]
+      'title4': ['5.5rem', 0.8],
+      'title3': ['4.4rem', 0.8],
+      'title2': ['3.1rem', 0.8],
+      'title1': ['1.8rem', 0.8]
     },
     screens: {
       ...defaultTheme.screens,
       '3xl': '1800px'
-    }
+    },
   },
   variants: {
     extend: {},

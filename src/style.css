@@ -21,6 +21,10 @@
     src: url(./OpenSans-Regular.ttf) format("truetype");
   }
 }
+.title {
+  left: -6px;
+  /* letter-spacing: 0px; */
+}
 
 @layer components {
   .menu-item {
