@@ -18,8 +18,7 @@ module.exports = {
         '3xl': '1800px'
       },
       inset: {
-        '-6px': '-6px',
-        '-5px': '-5px',
+        '-1.4': '-0.3125rem',
       }
     },
     backgroundColor: theme => ({
