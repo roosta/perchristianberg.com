@@ -26,7 +26,6 @@
 
 .banner {
   background-image: url("./bg1.jpg");
-  height: 800px;
 }
 
 @layer components {

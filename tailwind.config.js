@@ -19,6 +19,10 @@ module.exports = {
       },
       inset: {
         '-1.4': '-0.3125rem',
+      },
+      height: {
+        'sm': '500px',
+        'md': '800px'
       }
     },
     backgroundColor: theme => ({
