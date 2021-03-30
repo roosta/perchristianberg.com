@@ -12,7 +12,8 @@ module.exports = {
         'title4': ['5.5rem', 0.8],
         'title3': ['4.8rem', 0.8],
         'title2': ['3.1rem', 0.8],
-        'title1': ['1.8rem', 0.8]
+        'title1': ['1.8rem', 0.8],
+        'screen': ['18vw', 0.8]
       },
       screens: {
         '3xl': '1800px'
