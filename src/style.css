@@ -21,7 +21,9 @@
     src: url(./OpenSans-Regular.ttf) format("truetype");
   }
 }
-.title {
+
+html,body {
+  height: 100%;
 }
 
 .banner {
