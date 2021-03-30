@@ -22,8 +22,8 @@ module.exports = {
         '-1.4': '-0.3125rem',
       },
       height: {
-        'sm': '500px',
-        'md': '800px'
+        'screen': 'calc(100vh - 3rem)',
+        'fixed': '800px'
       }
     },
     backgroundColor: theme => ({

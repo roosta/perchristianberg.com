@@ -28,7 +28,6 @@ html,body {
 
 .banner {
   background-image: url("./bg1.jpg");
-  height: calc(100vh - 3rem); /* 3rem = appbar height (h-14) */
 }
 
 @layer components {
