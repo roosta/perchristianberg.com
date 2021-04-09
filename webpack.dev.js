@@ -6,6 +6,7 @@ module.exports = merge(common, {
   devtool: 'inline-source-map',
   devServer: {
     contentBase: './dist',
+    host: '0.0.0.0',
     open: {
       app: ['google-chrome-unstable', '--force-device-scale-factor=1']
     },
