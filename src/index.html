@@ -23,7 +23,7 @@
               </div>
             </div>
             <div class="absolute sm:hidden">
-              <button id="menu-button" type="button" class="inline-flex items-center justify-center p-2 text-white hover:bg-white hover:bg-opacity-10 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+              <button id="slide-menu-btn" type="button" class="inline-flex items-center justify-center p-2 text-white hover:bg-white hover:bg-opacity-10 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
                 <span class="sr-only">Open main menu</span>
                 <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
@@ -52,43 +52,12 @@
         <div>hello world</div>
       </section>
     </div>
-    <section id="menu" class="hidden fixed inset-0 overflow-hidden" aria-labelledby="slide-over-title" role="dialog" aria-modal="true">
+    <aside id="slide-container" class="invisible fixed inset-0 overflow-hidden" aria-labelledby="slide-over-title" role="dialog" aria-modal="true">
       <div class="absolute inset-0 overflow-hidden">
-        <!--
-          Background overlay, show/hide based on slide-over state.
-
-          Entering: "ease-in-out duration-500"
-          From: "opacity-0"
-          To: "opacity-100"
-          Leaving: "ease-in-out duration-500"
-          From: "opacity-100"
-          To: "opacity-0"
-        -->
-        <div class="opacity-0 absolute inset-0 bg-black bg-opacity-60 transition-opacity" aria-hidden="true"></div>
-
+        <div id="slide-overlay" class="opacity-0 ease-in-out duration-500 absolute inset-0 bg-black bg-opacity-60 transition-opacity" aria-hidden="true"></div>
         <div class="absolute inset-y-0 right-0 pl-10 max-w-full flex">
-          <!--
-            Slide-over panel, show/hide based on slide-over state.
-
-            Entering: "transform transition ease-in-out duration-500 sm:duration-700"
-            From: "translate-x-full"
-            To: "translate-x-0"
-            Leaving: "transform transition ease-in-out duration-500 sm:duration-700"
-            From: "translate-x-0"
-            To: "translate-x-full"
-          -->
-          <div class="relative w-72 transform translate-x-full">
-            <!--
-              Close button, show/hide based on slide-over state.
-
-              Entering: "ease-in-out duration-500"
-              From: "opacity-0"
-              To: "opacity-100"
-              Leaving: "ease-in-out duration-500"
-              From: "opacity-100"
-              To: "opacity-0"
-            -->
-            <div class="opacity-0 absolute top-0 left-0 -ml-8 pt-4 pr-2 flex sm:-ml-10 sm:pr-4">
+          <div id="slide-panel" class="transform transition-transform ease-in-out duration-500 translate-x-full relative w-72">
+            <div id="slide-close-btn" class="opacity-0 ease-in-out duration-500 transition-opacity absolute top-0 left-0 -ml-8 pt-6 pr-2 flex sm:-ml-10 sm:pr-4">
               <button class="text-white hover:bg-white hover:bg-opacity-10 focus:outline-none focus:ring-2 focus:ring-white">
                 <span class="sr-only">Close panel</span>
                 <!-- Heroicon name: outline/x -->
