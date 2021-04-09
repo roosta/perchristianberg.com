@@ -7,9 +7,12 @@ const elements = {
   container: document.getElementById("slide-container"),
   openBtn:   document.getElementById("slide-menu-btn"),
   closeBtn:  document.getElementById("slide-close-btn"),
+  main:      document.getElementById("main"),
 };
 
 function onMenuOpen(e, state) {
+
+  elements.main.classList.toggle("overflow-hidden")
   elements.container.classList.toggle("invisible");
   elements.overlay.classList.replace("opacity-0", "opacity-100");
   elements.panel.classList.replace("translate-x-full", "translate-x-0");
@@ -23,6 +26,7 @@ function onMenuClose(e) {
   elements.closeBtn.classList.replace("opacity-100", "opacity-0");
   elements.overlay.addEventListener("transitionend", function f() {
     elements.container.classList.toggle("invisible");
+    elements.main.classList.toggle("overflow-hidden")
     this.removeEventListener("transitionend", f);
   })
 }
