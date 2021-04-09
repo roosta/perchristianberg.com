@@ -35,3 +35,7 @@ html,body {
     @apply font-menu text-white capitalize text-opacity-50 hover:text-opacity-100;
   }
 }
+
+#slide-container {
+  will-change: transform, opacity;
+}
