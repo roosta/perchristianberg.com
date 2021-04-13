@@ -35,6 +35,8 @@ function onMenuClose(e) {
 
 function onCollapse(e) {
   elements.collapseMenu.classList.toggle("hidden");
+  const svgs = document.querySelectorAll("#collapse-btn > svg");
+  svgs.forEach(svg => svg.classList.toggle("hidden"));
 
 }
 
