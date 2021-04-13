@@ -59,10 +59,7 @@
                 <div id="slide-close-btn" class="absolute opacity-0 ease-in-out duration-500 transition-opacity -ml-11 pr-2 flex">
                   <button class="text-white hover:bg-white hover:bg-opacity-10 focus:outline-none focus:ring-2 focus:ring-white">
                     <span class="sr-only">Close panel</span>
-                    <!-- Heroicon name: outline/x -->
-                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-                    </svg>
+                    {{> icons/x }}
                   </button>
                 </div>
                 <h2 class="text-xl font-medium text-white uppercase font-display" id="slide-over-title">
@@ -74,12 +71,8 @@
                 <a href="#" class="font-menu capitalize block px-4 py-2 text-white hover:bg-white hover:bg-opacity-20" role="menuitem">studio</a>
                 <div id="collapse-btn" class="flex items-center font-menu capitalize text-white cursor-pointer block px-4 py-2 hover:bg-white hover:bg-opacity-20" role="menuitem">
                   <span class="">music</span>
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mx-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                  </svg>
-                  <svg class="hidden h-4 w-4 mx-3" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
-                  </svg>
+                  {{> icons/chevron-down }}
+                  {{> icons/chevron-up }}
                 </div>
                 <div id="collapse-menu" class="hidden">
                   <a href="#" class="font-menu capitalize block px-8 py-2 text-white hover:bg-white hover:bg-opacity-20" role="menuitem">project 1</a>
