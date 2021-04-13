@@ -2,13 +2,13 @@ import "./style.css"
 import "./bg1.jpg"
 
 const elements = {
-  overlay:     document.getElementById("slide-overlay"),
-  panel:       document.getElementById("slide-panel"),
-  container:   document.getElementById("slide-container"),
-  openBtn:     document.getElementById("slide-menu-btn"),
-  closeBtn:    document.getElementById("slide-close-btn"),
-  main:        document.getElementById("main"),
-  collapseBtn: document.getElementById("collapse-btn"),
+  overlay:      document.getElementById("slide-overlay"),
+  panel:        document.getElementById("slide-panel"),
+  container:    document.getElementById("slide-container"),
+  openBtn:      document.getElementById("slide-menu-btn"),
+  closeBtn:     document.getElementById("slide-close-btn"),
+  main:         document.getElementById("main"),
+  collapseBtn:  document.getElementById("collapse-btn"),
   collapseMenu: document.getElementById("collapse-menu"),
 };
 
