@@ -34,6 +34,7 @@ function onMenuClose(e) {
 function main() {
   elements.closeBtn.addEventListener("click", onMenuClose);
   elements.openBtn.addEventListener("click", onMenuOpen);
+  elements.overlay.addEventListener("click", onMenuClose);
 }
 
 main();
