@@ -25,7 +25,7 @@
             <div class="absolute sm:hidden">
               <button id="slide-menu-btn" type="button" class="inline-flex items-center justify-center p-2 text-white hover:bg-white hover:bg-opacity-10 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
                 <span class="sr-only">Open main menu</span>
-                {{> icons/menu }}
+                {{> icons/menu class="block h-6 w-6" }}
               </button>
             </div>
           </div>
@@ -59,7 +59,7 @@
                 <div id="slide-close-btn" class="absolute opacity-0 ease-in-out duration-500 transition-opacity -ml-11 pr-2 flex">
                   <button class="text-white hover:bg-white hover:bg-opacity-10 focus:outline-none focus:ring-2 focus:ring-white">
                     <span class="sr-only">Close panel</span>
-                    {{> icons/x }}
+                    {{> icons/x class="h-6 w-6" }}
                   </button>
                 </div>
                 <h2 class="text-xl font-medium text-white uppercase font-display" id="slide-over-title">
@@ -71,8 +71,8 @@
                 <a href="#" class="font-menu capitalize block px-4 py-2 text-white hover:bg-white hover:bg-opacity-20" role="menuitem">studio</a>
                 <div id="collapse-btn" class="flex items-center font-menu capitalize text-white cursor-pointer block px-4 py-2 hover:bg-white hover:bg-opacity-20" role="menuitem">
                   <span class="">music</span>
-                  {{> icons/chevron-down }}
-                  {{> icons/chevron-up }}
+                  {{> icons/chevron-down class="h-4 w-4 mx-3" }}
+                  {{> icons/chevron-up class="hidden h-4 w-4 mx-3" }}
                 </div>
                 <div id="collapse-menu" class="hidden">
                   <a href="#" class="font-menu capitalize block px-8 py-2 text-white hover:bg-white hover:bg-opacity-20" role="menuitem">project 1</a>
