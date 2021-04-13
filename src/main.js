@@ -45,9 +45,6 @@ function main() {
   elements.openBtn.addEventListener("click", onMenuOpen);
   elements.overlay.addEventListener("click", onMenuClose);
   elements.collapseBtn.addEventListener("click", onCollapse);
-
-  onMenuOpen();
-
 }
 
 main();
