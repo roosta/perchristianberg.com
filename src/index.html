@@ -57,24 +57,24 @@
         <div id="slide-overlay" class="opacity-0 ease-in-out duration-500 absolute inset-0 bg-black bg-opacity-60 transition-opacity" aria-hidden="true"></div>
         <div class="absolute inset-y-0 right-0 pl-10 max-w-full flex">
           <div id="slide-panel" class="transform transition-transform ease-in-out duration-500 translate-x-full relative w-72">
-            <div id="slide-close-btn" class="opacity-0 ease-in-out duration-500 transition-opacity absolute top-0 left-0 -ml-8 pt-6 pr-2 flex sm:-ml-10 sm:pr-4">
-              <button class="text-white hover:bg-white hover:bg-opacity-10 focus:outline-none focus:ring-2 focus:ring-white">
-                <span class="sr-only">Close panel</span>
-                <!-- Heroicon name: outline/x -->
-                <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+
+            <div class="h-full flex flex-col bg-primary overflow-y-scroll">
+              <div class="px-4 sm:px-6 h-14 flex items-center">
+
+                <div id="slide-close-btn" class="absolute opacity-0 ease-in-out duration-500 transition-opacity -ml-11 pr-2 flex">
+                  <button class="text-white hover:bg-white hover:bg-opacity-10 focus:outline-none focus:ring-2 focus:ring-white">
+                    <span class="sr-only">Close panel</span>
+                    <!-- Heroicon name: outline/x -->
+                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                 </svg>
               </button>
             </div>
-
-            <div class="h-full flex flex-col py-6 bg-primary overflow-y-scroll">
-
-              <div class="px-4 sm:px-6">
                 <h2 class="text-xl font-medium text-white uppercase font-display" id="slide-over-title">
                   per christian berg
                 </h2>
               </div>
-              <div class="mt-6 flex-1">
+              <div class="mt-2 flex-1">
                   <a href="#" class="font-menu capitalize block px-4 py-2 text-white hover:bg-white hover:bg-opacity-20" role="menuitem">bio</a>
                   <a href="#" class="font-menu capitalize block px-4 py-2 text-white hover:bg-white hover:bg-opacity-20" role="menuitem">studio</a>
                   <a href="#" class="font-menu capitalize block px-4 py-2 text-white hover:bg-white hover:bg-opacity-20" role="menuitem">music</a>
