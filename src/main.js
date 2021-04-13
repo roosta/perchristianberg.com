@@ -1,5 +1,6 @@
 import "./style.css"
 import "./bg1.jpg"
+import './icons/menu.hbs'
 
 const elements = {
   overlay:     document.getElementById("slide-overlay"),

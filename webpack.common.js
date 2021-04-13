@@ -44,12 +44,17 @@ module.exports = {
         test: /\.html$/i,
         loader: 'html-loader',
       },
+      {
+        test: /\.hbs$/,
+        loader: "handlebars-loader",
+
+      },
     ]
   },
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      template: 'src/index.html',
+      template: 'src/index.hbs',
     }),
     new MiniCssExtractPlugin({
       filename: 'style.css'
