@@ -1,9 +1,5 @@
 import "./style.css"
 import "./bg1.jpg"
-import './icons/menu.hbs'
-import './icons/chevron-down.hbs'
-import './icons/chevron-up.hbs'
-import './icons/x.hbs'
 
 const elements = {
   overlay:     document.getElementById("slide-overlay"),
