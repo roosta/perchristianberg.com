@@ -2,12 +2,14 @@ import "./style.css"
 import "./bg1.jpg"
 
 const elements = {
-  overlay:   document.getElementById("slide-overlay"),
-  panel:     document.getElementById("slide-panel"),
-  container: document.getElementById("slide-container"),
-  openBtn:   document.getElementById("slide-menu-btn"),
-  closeBtn:  document.getElementById("slide-close-btn"),
-  main:      document.getElementById("main"),
+  overlay:     document.getElementById("slide-overlay"),
+  panel:       document.getElementById("slide-panel"),
+  container:   document.getElementById("slide-container"),
+  openBtn:     document.getElementById("slide-menu-btn"),
+  closeBtn:    document.getElementById("slide-close-btn"),
+  main:        document.getElementById("main"),
+  collapseBtn: document.getElementById("collapse-btn"),
+  collapseMenu: document.getElementById("collapse-menu"),
 };
 
 function onMenuOpen(e, state) {
@@ -31,10 +33,16 @@ function onMenuClose(e) {
   })
 }
 
+function onCollapse(e) {
+  elements.collapseMenu.classList.toggle("hidden");
+
+}
+
 function main() {
   elements.closeBtn.addEventListener("click", onMenuClose);
   elements.openBtn.addEventListener("click", onMenuOpen);
   elements.overlay.addEventListener("click", onMenuClose);
+  elements.collapseBtn.addEventListener("click", onCollapse);
 }
 
 main();
