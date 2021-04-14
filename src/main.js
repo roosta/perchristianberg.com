@@ -45,12 +45,21 @@ function onCollapse(e) {
 
 function onMouseEnter(e, state) {
   elements.submenuContent.classList.remove("invisible");
+  elements.submenuContent.classList.replace("opacity-0", "opacity-100");
+  elements.submenuContent.classList.replace("scale-95", "scale-100");
   clearTimeout(state.timer);
 }
 
 function onMouseLeave(e, state) {
   state.timer = setTimeout((e) => {
-    elements.submenuContent.classList.add("invisible")
+    elements.submenuContent.classList.replace("opacity-100", "opacity-0");
+    elements.submenuContent.classList.replace("scale-100", "scale-95");
+    elements.submenuContent.addEventListener("transitionend", function f() {
+      elements.submenuContent.classList.add("invisible");
+      this.removeEventListener("transitionend", f);
+
+    })
+
   }, 1000)
 
 }
