@@ -2,16 +2,17 @@ import "./style.css"
 import "./bg1.jpg"
 
 const elements = {
-  overlay:      document.getElementById("slide-overlay"),
-  panel:        document.getElementById("slide-panel"),
-  container:    document.getElementById("slide-container"),
-  openBtn:      document.getElementById("slide-menu-btn"),
-  closeBtn:     document.getElementById("slide-close-btn"),
-  main:         document.getElementById("main"),
-  collapseBtn:  document.getElementById("collapse-btn"),
-  collapseMenu: document.getElementById("collapse-menu"),
-  submenu:      document.getElementById("submenu"),
-  submenuBtn:      document.getElementById("submenu-btn"),
+  overlay:        document.getElementById("slide-overlay"),
+  panel:          document.getElementById("slide-panel"),
+  container:      document.getElementById("slide-container"),
+  openBtn:        document.getElementById("slide-menu-btn"),
+  closeBtn:       document.getElementById("slide-close-btn"),
+  main:           document.getElementById("main"),
+  collapseBtn:    document.getElementById("collapse-btn"),
+  collapseMenu:   document.getElementById("collapse-menu"),
+  submenu:        document.getElementById("submenu"),
+  submenuContent: document.getElementById("submenu-content"),
+  submenuBtn:     document.getElementById("submenu-btn"),
 };
 
 function onMenuOpen(e, state) {
@@ -42,22 +43,28 @@ function onCollapse(e) {
 
 }
 
-function onMouseOver(e) {
-  elements.submenu.classList.toggle("invisible");
+function onMouseEnter(e, state) {
+  elements.submenuContent.classList.remove("invisible");
+  clearTimeout(state.timer);
 }
 
-function onMouseOut(e) {
-  elements.submenu.classList.toggle("invisible");
+function onMouseLeave(e, state) {
+  state.timer = setTimeout((e) => {
+    elements.submenuContent.classList.add("invisible")
+  }, 1000)
 
 }
 
 function main() {
+  let state = {
+    timer: undefined,
+  };
   elements.closeBtn.addEventListener("click", onMenuClose);
   elements.openBtn.addEventListener("click", onMenuOpen);
   elements.overlay.addEventListener("click", onMenuClose);
   elements.collapseBtn.addEventListener("click", onCollapse);
-  elements.submenuBtn.addEventListener("mouseover", onMouseOver)
-  elements.submenuBtn.addEventListener("mouseout", onMouseOut)
+  elements.submenu.addEventListener("mouseenter", (e) => onMouseEnter(e, state));
+  elements.submenu.addEventListener("mouseleave", (e) => onMouseLeave(e, state));
 }
 
 main();
