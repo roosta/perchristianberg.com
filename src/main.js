@@ -10,6 +10,8 @@ const elements = {
   main:         document.getElementById("main"),
   collapseBtn:  document.getElementById("collapse-btn"),
   collapseMenu: document.getElementById("collapse-menu"),
+  submenu:      document.getElementById("submenu"),
+  submenuBtn:      document.getElementById("submenu-btn"),
 };
 
 function onMenuOpen(e, state) {
@@ -40,11 +42,22 @@ function onCollapse(e) {
 
 }
 
+function onMouseOver(e) {
+  elements.submenu.classList.toggle("invisible");
+}
+
+function onMouseOut(e) {
+  elements.submenu.classList.toggle("invisible");
+
+}
+
 function main() {
   elements.closeBtn.addEventListener("click", onMenuClose);
   elements.openBtn.addEventListener("click", onMenuOpen);
   elements.overlay.addEventListener("click", onMenuClose);
   elements.collapseBtn.addEventListener("click", onCollapse);
+  elements.submenuBtn.addEventListener("mouseover", onMouseOver)
+  elements.submenuBtn.addEventListener("mouseout", onMouseOut)
 }
 
 main();

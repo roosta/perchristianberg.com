@@ -16,11 +16,11 @@
             <div class="hidden sm:block">
               <div class="flex space-x-4">
                 <div class="relative inline-block text-left" aria-haspopup="true" aria-expanded="false">
-                  <div class="flex items-center menu-item">
-                    <span class="cursor-pointer">music</span>
+                  <div id="submenu-btn" class="flex items-center menu-item cursor-pointer">
+                    <span>music</span>
                     {{> icons/chevron-down class="h-4 w-4 pl-1" }}
                   </div>
-                  <div class="origin-top-left absolute left-0 mt-2 w-56 shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
+                  <div id="submenu" class="transform transition ease-out duration-100 invisible origin-top-left absolute left-0 mt-2 w-56 shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
                     <div class="py-1" role="none">
                       <a href="#" class="font-menu block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Project 1</a>
                       <a href="#" class="font-menu block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Project 2</a>
