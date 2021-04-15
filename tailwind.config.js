@@ -20,7 +20,7 @@ module.exports = {
         '-1.4': '-0.3125rem',
       },
       height: {
-        'screen': 'calc(100vh - 3rem)',
+        'screen': 'calc(100vh - 6rem)',
         'fixed': '800px'
       }
     },
