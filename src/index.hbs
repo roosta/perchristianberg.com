@@ -77,13 +77,13 @@
                   per christian berg
                 </h2>
               </div>
-              <nav class="flex-1">
-                <div id="collapse-btn" class="flex items-center font-menu capitalize text-white cursor-pointer block px-4 py-2 hover:bg-white hover:bg-opacity-20" role="menuitem">
+              <nav class="flex-1" aria-label="Mobile navigation">
+                <div id="collapse-btn" class="flex items-center font-menu capitalize text-white cursor-pointer block px-4 py-2 hover:bg-white hover:bg-opacity-20" role="menuitem" aria-haspopup="true" aria-expanded="false">
                   <span class="">music</span>
                   {{> icons/chevron-down class="h-4 w-4 mx-3" }}
                   {{> icons/chevron-up class="hidden h-4 w-4 mx-3" }}
                 </div>
-                <div id="collapse-menu" class="hidden">
+                <div id="collapse-menu" class="hidden" >
                   <a href="#" class="font-menu capitalize block px-8 py-2 text-white hover:bg-white hover:bg-opacity-20" role="menuitem">project 1</a>
                   <a href="#" class="font-menu capitalize block px-8 py-2 text-white hover:bg-white hover:bg-opacity-20" role="menuitem">project 2</a>
                   <a href="#" class="font-menu capitalize block px-8 py-2 text-white hover:bg-white hover:bg-opacity-20" role="menuitem">project 3</a>
