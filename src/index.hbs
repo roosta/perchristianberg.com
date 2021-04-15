@@ -9,42 +9,40 @@
   </head>
   <body class="bg-primary">
     <div id="main" class="h-full mx-auto w-full lg:w-10/12 xl:w-8/12">
-      <nav>
-        <div class="h-14 flex items-center">
-          <div class="relative flex h-6 items-center justify-end w-full mr-2 lg:mr-0">
-            <h1 class="w-8/12 title absolute top-0 left-0 lg:-left-1.5 xl:-left-1.4 2xl:-left-1.5 xl:text-title1 2xl:text-title2 sm:text-title2 text-screen text-white uppercase font-display">per christian berg</h1>
-            <div class="hidden sm:block">
-              <div class="flex space-x-4">
-                <div id="submenu" class="cursor-pointer relative inline-block text-left font-menu text-white capitalize text-opacity-50 hover:text-opacity-100">
-                  <a id="submenu-btn" class="flex items-center" aria-haspopup="true" aria-expanded="false">
-                    <span>music</span>
-                    {{> icons/chevron-down class="h-4 w-4 pl-1" }}
-                  </a>
-                  <div class="pt-2">
-                    <div id="submenu-content" class="transition transform opacity-0 scale-95 ease-out invisible origin-top-left absolute left-0 w-56 shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="submenu-btn">
-                      <div class="py-1" role="none">
-                        <a href="#" class="font-menu block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Project 1</a>
-                        <a href="#" class="font-menu block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Project 2</a>
-                        <a href="#" class="font-menu block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Project 3</a>
-                      </div>
+      <header class="h-14 flex items-center">
+        <div class="relative flex h-6 items-center justify-end w-full mr-2 lg:mr-0">
+          <h1 class="w-8/12 title absolute top-0 left-0 lg:-left-1.5 xl:-left-1.4 2xl:-left-1.5 xl:text-title1 2xl:text-title2 sm:text-title2 text-screen text-white uppercase font-display">per christian berg</h1>
+          <div class="hidden sm:block">
+            <div class="flex space-x-4">
+              <div id="submenu" class="cursor-pointer relative inline-block text-left font-menu text-white capitalize text-opacity-50 hover:text-opacity-100">
+                <a id="submenu-btn" class="flex items-center" aria-haspopup="true" aria-expanded="false">
+                  <span>music</span>
+                  {{> icons/chevron-down class="h-4 w-4 pl-1" }}
+                </a>
+                <div class="pt-2">
+                  <div id="submenu-content" class="transition transform opacity-0 scale-95 ease-out invisible origin-top-left absolute left-0 w-56 shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="submenu-btn">
+                    <div class="py-1" role="none">
+                      <a href="#" class="font-menu block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Project 1</a>
+                      <a href="#" class="font-menu block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Project 2</a>
+                      <a href="#" class="font-menu block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Project 3</a>
                     </div>
                   </div>
                 </div>
-                <a class="menu-item" href="#">video</a>
-                <a class="menu-item" href="#">bio</a>
-                <a class="menu-item" href="#">studio</a>
-                <a class="menu-item" href="#">contact</a>
               </div>
-            </div>
-            <div class="absolute sm:hidden">
-              <button id="slide-menu-btn" type="button" class="inline-flex items-center justify-center p-2 text-white hover:bg-white hover:bg-opacity-10 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
-                <span class="sr-only">Open main menu</span>
-                {{> icons/menu class="block h-6 w-6" }}
-              </button>
+              <a class="menu-item" href="#">video</a>
+              <a class="menu-item" href="#">bio</a>
+              <a class="menu-item" href="#">studio</a>
+              <a class="menu-item" href="#">contact</a>
             </div>
           </div>
+          <div class="absolute sm:hidden">
+            <button id="slide-menu-btn" type="button" class="inline-flex items-center justify-center p-2 text-white hover:bg-white hover:bg-opacity-10 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+              <span class="sr-only">Open main menu</span>
+              {{> icons/menu class="block h-6 w-6" }}
+            </button>
+          </div>
         </div>
-      </nav>
+      </header>
       <section class="">
         <div role="img" aria-label="Vestibulum ut sem imperdiet, sollicitudin" class="banner h-screen sm:h-fixed bg-cover bg-center"></div>
         <div class="flex sm:grid sm:grid-cols-0.5 justify-center font-body text-white text-opacity-50 h-9 md:h-12 items-center">
@@ -55,6 +53,9 @@
             <div class="rounded-full w-3 h-3 bg-white bg-opacity-30"></div>
           </div>
         </div>
+      </section>
+      <section>
+        <div></div>
       </section>
     </div>
     <aside id="slide-container" class="invisible fixed inset-0 overflow-hidden" aria-labelledby="slide-over-title" role="dialog" aria-modal="true">
