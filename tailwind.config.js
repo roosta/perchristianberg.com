@@ -24,7 +24,7 @@ module.exports = {
         'fixed': '800px'
       },
       gridTemplateColumns: {
-        'cnav': '1fr 0.5fr 1fr',
+        '0.5': '1fr 0.5fr 1fr',
       }
     },
     backgroundColor: theme => ({
