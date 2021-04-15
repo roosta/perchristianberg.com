@@ -22,6 +22,9 @@ module.exports = {
       height: {
         'screen': 'calc(100vh - 6rem)',
         'fixed': '800px'
+      },
+      gridTemplateColumns: {
+        'cnav': '1fr 0.5fr 1fr',
       }
     },
     backgroundColor: theme => ({
