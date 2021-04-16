@@ -57,7 +57,7 @@ module.exports = {
       template: 'src/index.hbs',
     }),
     new MiniCssExtractPlugin({
-      filename: 'style.css'
+      filename: 'style.[contenthash].css'
     })
   ]
 };
