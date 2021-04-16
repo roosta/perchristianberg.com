@@ -47,6 +47,9 @@ module.exports = {
       {
         test: /\.hbs$/,
         loader: "handlebars-loader",
+        options: {
+          inlineRequires: /\.(png|svg|jpg|jpeg|gif)$/,
+        },
 
       },
     ]
