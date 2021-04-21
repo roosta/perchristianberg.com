@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import '~@splidejs/splide/dist/css/splide-core.min.css';
+
 @layer base {
   @font-face {
     font-family: Raleway Bold;
@@ -26,8 +28,16 @@ html,body {
   height: 100%;
 }
 
-.banner {
+.banner1 {
   background-image: url("./bg1.jpg");
+}
+
+.banner2 {
+  background-image: url("./bg2.jpg");
+}
+
+.banner3 {
+  background-image: url("./bg3.jpg");
 }
 
 @layer components {
@@ -38,4 +48,24 @@ html,body {
 
 #slide-container {
   will-change: transform, opacity;
+}
+
+.splide {
+}
+
+.splide__arrow {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  transform: translateY(-50%);
+  fill: white;
+}
+
+.splide__arrow--prev {
+  left: 0;
+  transform: rotateY(-180deg);
+}
+
+.splide__arrow--next {
+  right: 0;
 }

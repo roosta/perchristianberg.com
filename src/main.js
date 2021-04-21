@@ -1,5 +1,7 @@
 import "./style.css"
 
+import Splide from '@splidejs/splide';
+
 const elements = {
   overlay:        document.getElementById("slide-overlay"),
   panel:          document.getElementById("slide-panel"),
@@ -12,6 +14,7 @@ const elements = {
   submenu:        document.getElementById("submenu"),
   submenuContent: document.getElementById("submenu-content"),
   submenuBtn:     document.getElementById("submenu-btn"),
+  pips: document.querySelectorAll(".pip"),
 };
 
 function onMenuOpen(e, state) {
@@ -73,6 +76,23 @@ function main() {
   elements.collapseBtn.addEventListener("click", onCollapse);
   elements.submenu.addEventListener("mouseenter", (e) => onMouseEnter(e, state));
   elements.submenu.addEventListener("mouseleave", (e) => onMouseLeave(e, state));
+
+  let splide = new Splide(".splide", {
+    pagination: false,
+  }).mount();
+
+  splide.on("moved", () => {
+    elements.pips.forEach((p, i) => {
+      if (i === splide.index) {
+        p.classList.remove("bg-opacity-30");
+      } else if (!p.classList.contains("bg-opacity-30")) {
+        p.classList.add("bg-opacity-30");
+      }
+
+    })
+    console.log("moved!")
+  })
+
 }
 
 main();
