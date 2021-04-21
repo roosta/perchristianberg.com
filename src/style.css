@@ -61,11 +61,16 @@ html,body {
   fill: white;
 }
 
+.splide__arrow:focus {
+  outline: 1px solid white;
+}
+
 .splide__arrow--prev {
-  left: 0;
+  left: 1px;
   transform: rotateY(-180deg);
 }
 
 .splide__arrow--next {
-  right: 0;
+  right: 1px;
 }
+
