@@ -79,7 +79,7 @@
             </div>
           </div>
         </section>
-        <section aria-label="Latest album" class="grid grid-cols-1 md:grid-cols-2 mt-16 lg:mt-24 items-center gap-4 p-4 lg:p-0">
+        <section aria-label="Latest album" class="grid grid-cols-1 md:grid-cols-2 my-16 lg:my-32 items-center gap-4 p-4 lg:p-0">
           <div>
             <h3 class="text-white font-display mb-8 text-2xl w-full lg:w-2/5">Suspendisse pretium ipsum</h3>
             <img src="./skogsro.jpg" alt="Skogsro album cover" class="object-fit block mb-8 sm:hidden">
@@ -91,6 +91,14 @@
           </div>
           <img src="./skogsro.jpg" alt="Skogsro album cover" class="object-fit hidden sm:block">
         </section>
+        <footer>
+          <div class="flex justify-around">
+            <div class="text-white font-body flex items-center w-1/4">
+              <a class="hover:underline" href="mailto:booking@example.com">booking@example.com</a>
+            </div>
+            {{> icons class="text-white flex py-4 px-4 justify-between w-1/4"}}
+          </div>
+        </footer>
       </main>
     </div>
     <aside id="slide-container" class="invisible fixed inset-0 overflow-hidden" aria-labelledby="slide-over-title" role="dialog" aria-modal="true">
@@ -128,14 +136,7 @@
                 <a href="#" class="font-menu capitalize block px-4 py-2 text-white hover:bg-white hover:bg-opacity-20" role="menuitem">studio</a>
                 <a href="#" class="font-menu capitalize block px-4 py-2 text-white hover:bg-white hover:bg-opacity-20" role="menuitem">contact</a>
               </nav>
-              <div class="text-white flex py-4 px-4 justify-between">
-                <a href="#" target="_blank">{{> icons/spotify class="h-6 w-6 hover:opacity-50" }}</a>
-                <a href="#" target="_blank">{{> icons/facebook class="h-6 w-6 hover:opacity-50"}}</a>
-                <a href="#" target="_blank">{{> icons/itunes class="h-6 w-6 hover:opacity-50"}}</a>
-                <a href="#" target="_blank">{{> icons/soundcloud class="h-6 w-6 hover:opacity-50"}}</a>
-                <a href="#" target="_blank">{{> icons/bandcamp class="h-6 w-6 hover:opacity-50"}}</a>
-                <a href="#" target="_blank">{{> icons/youtube class="h-6 w-6 hover:opacity-50"}}</a>
-              </div>
+              {{> icons class="text-white flex py-4 px-4 justify-between"}}
             </div>
           </div>
         </div>
