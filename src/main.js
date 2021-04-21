@@ -79,6 +79,7 @@ function main() {
 
   let splide = new Splide(".splide", {
     pagination: false,
+    rewind: true,
   }).mount();
 
   splide.on("moved", () => {
