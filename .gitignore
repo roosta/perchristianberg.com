@@ -7,3 +7,4 @@ dist
 tmp
 config.json
 hours.json
+mail.hbs
