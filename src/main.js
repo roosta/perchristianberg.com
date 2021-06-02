@@ -4,21 +4,27 @@ import Splide from '@splidejs/splide';
 import latestRelease from '../latest-release.json';
 
 const elements = {
-  overlay:          document.getElementById("slide-overlay"),
-  panel:            document.getElementById("slide-panel"),
-  container:        document.getElementById("slide-container"),
-  openBtn:          document.getElementById("slide-menu-btn"),
-  closeBtn:         document.getElementById("slide-close-btn"),
-  main:             document.getElementById("main"),
-  collapseBtn:      document.getElementById("collapse-btn"),
-  collapseMenu:     document.getElementById("collapse-menu"),
-  submenu:          document.getElementById("submenu"),
-  submenuContent:   document.getElementById("submenu-content"),
-  submenuBtn:       document.getElementById("submenu-btn"),
-  pips:             document.querySelectorAll(".pip"),
-  latestReleaseImg: document.querySelectorAll(".latest-release-img"),
-
+  overlay:            document.getElementById("slide-overlay"),
+  panel:              document.getElementById("slide-panel"),
+  container:          document.getElementById("slide-container"),
+  openBtn:            document.getElementById("slide-menu-btn"),
+  closeBtn:           document.getElementById("slide-close-btn"),
+  main:               document.getElementById("main"),
+  collapseBtn:        document.getElementById("collapse-btn"),
+  collapseMenu:       document.getElementById("collapse-menu"),
+  submenu:            document.getElementById("submenu"),
+  submenuContent:     document.getElementById("submenu-content"),
+  submenuBtn:         document.getElementById("submenu-btn"),
+  pips:               document.querySelectorAll(".pip"),
+  latestReleaseImg:   document.querySelectorAll(".latest-release-img"),
+  carouselAnnotation: document.getElementById("carousel-annotation"),
 };
+
+const annotations = [
+  "Vestibulum ut sem imperdiet, sollicitudin.",
+  "Vivamus imperdiet scelerisque.",
+  "Integer urna massa."
+];
 
 function onMenuOpen(e, state) {
 
@@ -78,6 +84,10 @@ function updateCover() {
   })
 }
 
+function updateAnnotation(index) {
+  elements.carouselAnnotation.innerHTML = annotations[index];
+}
+
 function main() {
   let state = {
     timer: undefined,
@@ -101,10 +111,10 @@ function main() {
       } else if (!p.classList.contains("bg-opacity-30")) {
         p.classList.add("bg-opacity-30");
       }
-
     })
-    console.log("moved!")
+    updateAnnotation(splide.index);
   })
+  updateAnnotation(0);
   updateCover();
 }
 
