@@ -73,7 +73,6 @@ function onMouseLeave(e, state) {
 // This basically enables us to define a filename in the latestRelease config
 function updateCover() {
   const url = require(`../img/${latestRelease.image.file}`);
-  console.log(elements.latestReleaseImg)
   elements.latestReleaseImg.forEach(img => {
     img.src = url;
   })
