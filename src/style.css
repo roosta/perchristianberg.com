@@ -29,15 +29,15 @@ html,body {
 }
 
 .banner1 {
-  background-image: url("./bg1.jpg");
+  background-image: url("../img/bg1.jpg");
 }
 
 .banner2 {
-  background-image: url("./bg2.jpg");
+  background-image: url("../img/bg2.jpg");
 }
 
 .banner3 {
-  background-image: url("./bg3.jpg");
+  background-image: url("../img/bg3.jpg");
 }
 
 @layer components {
