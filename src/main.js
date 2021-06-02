@@ -1,20 +1,23 @@
 import "./style.css"
 
 import Splide from '@splidejs/splide';
+import latestRelease from '../latest-release.json';
 
 const elements = {
-  overlay:        document.getElementById("slide-overlay"),
-  panel:          document.getElementById("slide-panel"),
-  container:      document.getElementById("slide-container"),
-  openBtn:        document.getElementById("slide-menu-btn"),
-  closeBtn:       document.getElementById("slide-close-btn"),
-  main:           document.getElementById("main"),
-  collapseBtn:    document.getElementById("collapse-btn"),
-  collapseMenu:   document.getElementById("collapse-menu"),
-  submenu:        document.getElementById("submenu"),
-  submenuContent: document.getElementById("submenu-content"),
-  submenuBtn:     document.getElementById("submenu-btn"),
-  pips: document.querySelectorAll(".pip"),
+  overlay:          document.getElementById("slide-overlay"),
+  panel:            document.getElementById("slide-panel"),
+  container:        document.getElementById("slide-container"),
+  openBtn:          document.getElementById("slide-menu-btn"),
+  closeBtn:         document.getElementById("slide-close-btn"),
+  main:             document.getElementById("main"),
+  collapseBtn:      document.getElementById("collapse-btn"),
+  collapseMenu:     document.getElementById("collapse-menu"),
+  submenu:          document.getElementById("submenu"),
+  submenuContent:   document.getElementById("submenu-content"),
+  submenuBtn:       document.getElementById("submenu-btn"),
+  pips:             document.querySelectorAll(".pip"),
+  latestReleaseImg: document.querySelectorAll(".latest-release-img"),
+
 };
 
 function onMenuOpen(e, state) {
@@ -63,7 +66,17 @@ function onMouseLeave(e, state) {
     })
 
   }, 1000)
+}
 
+// Have to require in image due to content hashes not being passed from handlebars
+// template strings, resulting in wrong url on compilation.
+// This basically enables us to define a filename in the latestRelease config
+function updateCover() {
+  const url = require(`../img/${latestRelease.image.file}`);
+  console.log(elements.latestReleaseImg)
+  elements.latestReleaseImg.forEach(img => {
+    img.src = url;
+  })
 }
 
 function main() {
@@ -93,7 +106,7 @@ function main() {
     })
     console.log("moved!")
   })
-
+  updateCover();
 }
 
 main();

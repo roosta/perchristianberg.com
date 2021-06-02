@@ -97,12 +97,14 @@
         <section aria-label="Latest album" class="grid grid-cols-1 md:grid-cols-2 my-16 lg:my-44 items-center gap-4 p-4 lg:p-0">
           <div>
             <h3 class="text-white font-display mb-8 text-2xl w-full lg:w-2/5">{{ htmlWebpackPlugin.options.latestRelease.title }}</h3>
-            <img src="../img/skogsro.jpg" alt="Skogsro album cover" class="object-fit block mb-8 sm:hidden shadow-xl">
+            <img alt="{{ htmlWebpackPlugin.options.latestRelease.image.alt }}"
+                 class="latest-release-img object-fit block mb-8 sm:hidden shadow-xl">
             <div class="text-white font-body w-fulll md:w lg:w-4/5">
               {{ htmlWebpackPlugin.options.latestRelease.description }}
             </div>
           </div>
-          <img src="../img/skogsro.jpg" alt="Skogsro album cover" class="object-fit hidden sm:block shadow-xl">
+          <img alt="{{ htmlWebpackPlugin.options.latestRelease.image.alt }}"
+               class="latest-release-img object-fit hidden sm:block shadow-xl">
         </section>
         <footer>
           <div class="p-4 flex justify-center">
