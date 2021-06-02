@@ -3,6 +3,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
+const latestRelease = require("./latest-release.json");
 
 module.exports = {
   entry: {
@@ -58,6 +59,7 @@ module.exports = {
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       template: 'src/index.hbs',
+      latestRelease: latestRelease,
     }),
     new MiniCssExtractPlugin({
       filename: 'style.[contenthash].css'
