@@ -7,7 +7,6 @@ module.exports = merge(common, {
   devServer: {
     contentBase: './dist',
     host: '0.0.0.0',
-    disableHostCheck: true,
     open: {
       app: ['google-chrome-unstable', '--force-device-scale-factor=1']
     },
