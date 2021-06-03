@@ -61,6 +61,10 @@ module.exports = {
       template: 'src/index.hbs',
       latestRelease: latestRelease,
     }),
+    new HtmlWebpackPlugin({
+      template: 'src/studio.hbs',
+      filename: 'studio/index.html'
+    }),
     new MiniCssExtractPlugin({
       filename: 'style.[contenthash].css'
     })
