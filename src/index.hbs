@@ -7,7 +7,7 @@
     <title>Per Christian Berg</title>
   </head>
   <body class="bg-primary">
-    <div id="main" class="h-full mx-auto w-full lg:w-10/12 xl:w-8/12">
+    <div class="h-full mx-auto w-full lg:w-10/12 xl:w-8/12">
       {{> header }}
       {{> carousel }}
       <main class="">
@@ -51,8 +51,8 @@
           <img alt="{{ htmlWebpackPlugin.options.latestRelease.image.alt }}"
                class="latest-release-img object-fit hidden sm:block shadow-xl">
         </section>
-        {{> footer }}
       </main>
+      {{> footer }}
     </div>
     {{> menu }}
   </body>
