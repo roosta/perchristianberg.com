@@ -3,8 +3,8 @@ import './studio.css'
 import Splide from '@splidejs/splide';
 import { attachListeners } from "./shared.js";
 
-// const pips = document.querySelectorAll(".pip");
-// const carouselAnnotation = document.getElementById("carousel-annotation");
+const pips = document.querySelectorAll(".pip");
+const carouselAnnotation = document.getElementById("carousel-annotation");
 
 const annotations = [
   "Vestibulum ut sem imperdiet, sollicitudin.",
@@ -26,7 +26,7 @@ function main() {
   }).mount();
 
   splide.on("moved", () => {
-    elements.pips.forEach((p, i) => {
+    pips.forEach((p, i) => {
       if (i === splide.index) {
         p.classList.remove("bg-opacity-30");
       } else if (!p.classList.contains("bg-opacity-30")) {
@@ -36,7 +36,6 @@ function main() {
     updateAnnotation(splide.index);
   })
   updateAnnotation(0);
-  updateCover();
 }
 
 main();
