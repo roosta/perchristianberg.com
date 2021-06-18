@@ -28,18 +28,6 @@ html,body {
   height: 100%;
 }
 
-.banner1 {
-  background-image: url("../img/bg1.jpg");
-}
-
-.banner2 {
-  background-image: url("../img/bg2.jpg");
-}
-
-.banner3 {
-  background-image: url("../img/bg3.jpg");
-}
-
 @layer components {
   .menu-item {
     @apply font-menu text-white capitalize text-opacity-50 hover:text-opacity-100;

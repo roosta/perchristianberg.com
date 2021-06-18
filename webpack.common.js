@@ -32,7 +32,15 @@ module.exports = {
     rules: [
       {
         test: /\.css$/i,
-        use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader']
+        use: [
+          MiniCssExtractPlugin.loader,
+          {
+            loader: 'css-loader',
+            options: {
+              importLoaders: 1
+            }
+          },
+          'postcss-loader']
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
@@ -52,7 +60,6 @@ module.exports = {
         options: {
           inlineRequires: /\.(png|svg|jpg|jpeg|gif)$/,
         },
-
       },
     ]
   },
@@ -69,7 +76,7 @@ module.exports = {
       filename: 'studio/index.html'
     }),
     new MiniCssExtractPlugin({
-      filename: 'style.[contenthash].css'
+      filename: '[name].[contenthash].css'
     })
   ]
 };

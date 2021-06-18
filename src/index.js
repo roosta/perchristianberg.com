@@ -1,4 +1,5 @@
-import "./style.css"
+import "./index.css"
+
 import Splide from '@splidejs/splide';
 import latestRelease from '../latest-release.json';
 
