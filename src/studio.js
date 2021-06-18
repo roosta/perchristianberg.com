@@ -12,29 +12,31 @@ const annotations = [
   "Integer urna massa."
 ];
 
-// function updateAnnotation(index) {
-//   carouselAnnotation.innerHTML = annotations[index];
-// }
+function updateAnnotation(index) {
+  carouselAnnotation.innerHTML = annotations[index];
+}
 
 
 function main() {
-  // let splide = new Splide(".splide", {
-  //   pagination: false,
-  //   rewind: true,
-  // }).mount();
+  attachListeners();
 
-  // splide.on("moved", () => {
-  //   elements.pips.forEach((p, i) => {
-  //     if (i === splide.index) {
-  //       p.classList.remove("bg-opacity-30");
-  //     } else if (!p.classList.contains("bg-opacity-30")) {
-  //       p.classList.add("bg-opacity-30");
-  //     }
-  //   })
-  //   updateAnnotation(splide.index);
-  // })
-  // updateAnnotation(0);
-  // updateCover();
+  let splide = new Splide(".splide", {
+    pagination: false,
+    rewind: true,
+  }).mount();
+
+  splide.on("moved", () => {
+    elements.pips.forEach((p, i) => {
+      if (i === splide.index) {
+        p.classList.remove("bg-opacity-30");
+      } else if (!p.classList.contains("bg-opacity-30")) {
+        p.classList.add("bg-opacity-30");
+      }
+    })
+    updateAnnotation(splide.index);
+  })
+  updateAnnotation(0);
+  updateCover();
 }
 
 main();
