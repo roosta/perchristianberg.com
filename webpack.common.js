@@ -9,6 +9,7 @@ module.exports = {
   entry: {
     index: './src/index.js',
     studio: './src/studio.js',
+    shared: './src/shared.js',
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
