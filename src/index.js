@@ -1,5 +1,4 @@
 import "./style.css"
-
 import Splide from '@splidejs/splide';
 import latestRelease from '../latest-release.json';
 

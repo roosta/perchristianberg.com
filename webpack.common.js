@@ -7,7 +7,8 @@ const latestRelease = require("./latest-release.json");
 
 module.exports = {
   entry: {
-    main: './src/main.js',
+    index: './src/index.js',
+    studio: './src/studio.js',
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -58,10 +59,12 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
+      chunks: ['index'],
       template: 'src/index.hbs',
       latestRelease: latestRelease,
     }),
     new HtmlWebpackPlugin({
+      chunks: ['studio'],
       template: 'src/studio.hbs',
       filename: 'studio/index.html'
     }),
