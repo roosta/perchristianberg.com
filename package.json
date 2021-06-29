@@ -1,5 +1,5 @@
 {
-  "name": "perchristianberg.com",
+  "name": "perchristianberg.no",
   "version": "0.0.1",
   "private": true,
   "description": "Website for Per Christian Berg",
@@ -12,14 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/roosta/perchristianberg.com.git"
+    "url": "git+https://github.com/roosta/perchristianberg.no.git"
   },
   "author": "Daniel Berg <mail@roosta.sh>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/roosta/perchristianberg.com/issues"
+    "url": "https://github.com/roosta/perchristianberg.no/issues"
   },
-  "homepage": "https://github.com/roosta/perchristianberg.com#readme",
+  "homepage": "https://github.com/roosta/perchristianberg.no#readme",
   "devDependencies": {
     "@splidejs/splide": "^2.4.21",
     "autoprefixer": "^10.2.6",
