@@ -4,6 +4,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
 const latestRelease = require("./latest-release.json");
+const images = require("./images.json");
 
 module.exports = {
   entry: {
@@ -70,6 +71,7 @@ module.exports = {
       chunks: ['index'],
       template: 'src/index.hbs',
       latestRelease: latestRelease,
+      images: images,
     }),
     new HtmlWebpackPlugin({
       chunks: ['studio'],

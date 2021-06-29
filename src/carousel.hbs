@@ -2,15 +2,11 @@
   <div class="splide z-0">
     <div class="splide__track">
       <ul class="splide__list">
-        <li class="splide__slide">
-          <div class="banner1 h-screen sm:h-fixed bg-cover bg-center"></div>
-        </li>
-        <li class="splide__slide">
-          <div class="banner2 h-screen sm:h-fixed bg-cover bg-center"></div>
-        </li>
-        <li class="splide__slide">
-          <div class="banner3 h-screen sm:h-fixed bg-cover bg-center"></div>
-        </li>
+        {{#each htmlWebpackPlugin.options.images.index }}
+          <li class="splide__slide">
+            <img src="{{this}}" class="h-screen sm:h-fixed object-cover object-center" />
+          </li>
+        {{/each}}
       </ul>
     </div>
   </div>
