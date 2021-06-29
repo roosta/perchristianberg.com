@@ -15,16 +15,6 @@ const annotations = [
   "Integer urna massa."
 ];
 
-// Have to require in image due to content hashes not being passed from handlebars
-// template strings, resulting in wrong url on compilation.
-// This basically enables us to define a filename in the latestRelease config
-function updateCover() {
-  const url = require(`../img/${latestRelease.image.file}`);
-  latestReleaseImg.forEach(img => {
-    img.src = url;
-  })
-}
-
 function updateAnnotation(index) {
   carouselAnnotation.innerHTML = annotations[index];
 }
@@ -47,7 +37,6 @@ function main() {
     updateAnnotation(splide.index);
   })
   updateAnnotation(0);
-  updateCover();
 }
 
 main();
