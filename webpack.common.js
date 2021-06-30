@@ -71,12 +71,13 @@ module.exports = {
       chunks: ['index'],
       template: 'src/index.hbs',
       latestRelease: latestRelease,
-      images: images,
+      images: images.index,
     }),
     new HtmlWebpackPlugin({
       chunks: ['studio'],
       template: 'src/studio.hbs',
-      filename: 'studio/index.html'
+      filename: 'studio/index.html',
+      images: images.studio,
     }),
     new MiniCssExtractPlugin({
       filename: '[name].[contenthash].css'
