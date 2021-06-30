@@ -2,6 +2,7 @@ import "./index.css"
 
 import Splide from "@splidejs/splide";
 import latestRelease from "../latest-release.json";
+import images from "../images.json";
 
 import { attachListeners, togglePips } from "./shared.js";
 
@@ -9,11 +10,7 @@ const latestReleaseImg = document.querySelectorAll(".latest-release-img");
 const pips = document.querySelectorAll(".pip");
 const carouselAnnotation = document.getElementById("carousel-annotation");
 
-const annotations = [
-  "Vestibulum ut sem imperdiet, sollicitudin.",
-  "Vivamus imperdiet scelerisque.",
-  "Integer urna massa."
-];
+const annotations = images.studio.map(item => item.annotation);
 
 function updateAnnotation(index) {
   carouselAnnotation.innerHTML = annotations[index];
