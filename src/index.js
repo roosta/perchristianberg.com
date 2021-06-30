@@ -3,7 +3,7 @@ import "./index.css"
 import Splide from "@splidejs/splide";
 import latestRelease from "../latest-release.json";
 
-import { attachListeners } from "./shared.js";
+import { attachListeners, togglePips } from "./shared.js";
 
 const latestReleaseImg = document.querySelectorAll(".latest-release-img");
 const pips = document.querySelectorAll(".pip");
@@ -26,14 +26,9 @@ function main() {
     rewind: true,
   }).mount();
 
+  togglePips(splide.index);
   splide.on("moved", () => {
-    pips.forEach((p, i) => {
-      if (i === splide.index) {
-        p.classList.remove("bg-opacity-30");
-      } else if (!p.classList.contains("bg-opacity-30")) {
-        p.classList.add("bg-opacity-30");
-      }
-    })
+    togglePips(splide.index);
     updateAnnotation(splide.index);
   })
   updateAnnotation(0);

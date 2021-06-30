@@ -3,17 +3,18 @@ let state = {
 };
 
 export const elements = {
-  overlay:            document.getElementById("slide-overlay"),
-  panel:              document.getElementById("slide-panel"),
-  container:          document.getElementById("slide-container"),
-  openBtn:            document.getElementById("slide-menu-btn"),
-  closeBtn:           document.getElementById("slide-close-btn"),
-  main:               document.getElementById("main"),
-  collapseBtn:        document.getElementById("collapse-btn"),
-  collapseMenu:       document.getElementById("collapse-menu"),
-  submenu:            document.getElementById("submenu"),
-  submenuContent:     document.getElementById("submenu-content"),
-  submenuBtn:         document.getElementById("submenu-btn"),
+  overlay:        document.getElementById("slide-overlay"),
+  panel:          document.getElementById("slide-panel"),
+  container:      document.getElementById("slide-container"),
+  openBtn:        document.getElementById("slide-menu-btn"),
+  closeBtn:       document.getElementById("slide-close-btn"),
+  main:           document.getElementById("main"),
+  collapseBtn:    document.getElementById("collapse-btn"),
+  collapseMenu:   document.getElementById("collapse-menu"),
+  submenu:        document.getElementById("submenu"),
+  submenuContent: document.getElementById("submenu-content"),
+  submenuBtn:     document.getElementById("submenu-btn"),
+  pips:           document.querySelectorAll(".pip"),
 };
 
 
@@ -72,5 +73,15 @@ export function attachListeners() {
   elements.collapseBtn.addEventListener("click", onCollapse);
   elements.submenu.addEventListener("mouseenter", (e) => onMouseEnter(e, state));
   elements.submenu.addEventListener("mouseleave", (e) => onMouseLeave(e, state));
+}
+
+export function togglePips(splideIndex) {
+  elements.pips.forEach((p, i) => {
+    if (i === splideIndex) {
+      p.classList.remove("bg-opacity-30");
+    } else if (!p.classList.contains("bg-opacity-30")) {
+      p.classList.add("bg-opacity-30");
+    }
+  })
 }
 
