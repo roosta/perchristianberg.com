@@ -10,9 +10,9 @@
     <div id="main" class="h-full mx-auto w-full lg:w-10/12 xl:w-8/12">
       {{> header }}
       {{> carousel }}
-      <main class="mb-16">
-        <section class="flex justify-between flex-wrap lg:p-0 p-4">
-          <div class="w-full sm:w-5/12 mt-16 lg:mt-24">
+      <main class="mb-16 flex justify-between flex-wrap lg:p-0 p-4">
+        <section class="w-full sm:w-5/12 mt-16 lg:mt-24">
+          <div class="mb-16">
             <h3 class="mb-4 text-white font-display text-opacity-50 uppercase">studio</h3>
             <p class="text-white font-body">
               I work as a producer, sound engineer and composer. Most of my
@@ -26,8 +26,7 @@
                go to audioskop.no
             </a>
           </div>
-
-          <div class="w-full sm:w-5/12 mt-16 lg:mt-24">
+          <div class="">
             <h3 class="mb-4 text-white font-display text-opacity-50 uppercase">services</h3>
             <p class="text-white font-body">
               I offer services such as recording, producing, mixing and movie audio
@@ -37,6 +36,22 @@
             </p>
           </div>
         </section>
+
+        <section class="w-full sm:w-5/12 mt-16 lg:mt-24">
+          <h3 class="mb-4 text-white font-display text-opacity-50 uppercase">Music</h3>
+          <div class="text-white font-body mb-4">Here are a few selected examples of tracks I have produced/recorded/mixed</div>
+          <iframe
+            src="https://open.spotify.com/embed/album/1DFixLWuPkv3KT3TnV35m3"
+            width="100%"
+            height="300"
+            frameborder="0"
+            allowtransparency="true"
+            allow="encrypted-media"
+            >
+          </iframe>
+        </section>
+        <div class="w-full sm:w-5/12 mt-16 lg:mt-24">
+        </div>
       </main>
       {{> footer }}
     </div>
