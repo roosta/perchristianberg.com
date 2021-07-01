@@ -6,6 +6,8 @@ module.exports = {
     './src/**/*.html',
     './src/**/*.hbs',
     './src/**/*.js',
+    './dist/**/*.html',
+    './dist/**/*.js',
   ],
   darkMode: false, // or 'media' or 'class'
   theme: {
