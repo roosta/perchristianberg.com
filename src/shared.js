@@ -26,7 +26,7 @@ function onMenuOpen(e, state) {
   elements.panel.classList.replace("translate-x-full", "translate-x-0");
   elements.closeBtn.classList.replace("opacity-0", "opacity-100");
 
-}
+};
 
 function onMenuClose(e) {
   elements.overlay.classList.replace("opacity-100", "opacity-0");
@@ -37,21 +37,21 @@ function onMenuClose(e) {
     elements.main.classList.toggle("overflow-hidden")
     this.removeEventListener("transitionend", f);
   })
-}
+};
 
 function onCollapse(e) {
   elements.collapseMenu.classList.toggle("hidden");
   const svgs = document.querySelectorAll("#collapse-btn > svg");
   svgs.forEach(svg => svg.classList.toggle("hidden"));
 
-}
+};
 
 function onMouseEnter(e, state) {
   elements.submenuContent.classList.remove("invisible");
   elements.submenuContent.classList.replace("opacity-0", "opacity-100");
   elements.submenuContent.classList.replace("scale-95", "scale-100");
   clearTimeout(state.timer);
-}
+};
 
 function onMouseLeave(e, state) {
   state.timer = setTimeout((e) => {
@@ -73,7 +73,7 @@ export function attachListeners() {
   elements.collapseBtn.addEventListener("click", onCollapse);
   elements.submenu.addEventListener("mouseenter", (e) => onMouseEnter(e, state));
   elements.submenu.addEventListener("mouseleave", (e) => onMouseLeave(e, state));
-}
+};
 
 export function togglePips(splideIndex) {
   elements.pips.forEach((p, i) => {
@@ -83,5 +83,5 @@ export function togglePips(splideIndex) {
       p.classList.add("bg-opacity-30");
     }
   })
-}
+};
 
