@@ -19,17 +19,16 @@ export const elements = {
 };
 
 
-function onMenuOpen(e, state) {
-
+function onMenuOpen() {
   elements.main.classList.toggle("overflow-hidden")
   elements.container.classList.toggle("invisible");
   elements.overlay.classList.replace("opacity-0", "opacity-100");
   elements.panel.classList.replace("translate-x-full", "translate-x-0");
   elements.closeBtn.classList.replace("opacity-0", "opacity-100");
 
-};
+}
 
-function onMenuClose(e) {
+function onMenuClose() {
   elements.overlay.classList.replace("opacity-100", "opacity-0");
   elements.panel.classList.replace("translate-x-0", "translate-x-full");
   elements.closeBtn.classList.replace("opacity-100", "opacity-0");
@@ -84,5 +83,5 @@ export function togglePips(splideIndex) {
       p.classList.add("bg-opacity-30");
     }
   })
-};
+}
 
