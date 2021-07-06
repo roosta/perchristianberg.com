@@ -10,6 +10,7 @@ module.exports = {
   entry: {
     index: './src/index.js',
     studio: './src/studio.js',
+    bio: './src/bio.js',
     shared: './src/shared.js',
   },
   output: {
@@ -78,6 +79,11 @@ module.exports = {
       template: 'src/studio.hbs',
       filename: 'studio/index.html',
       images: images.studio,
+    }),
+    new HtmlWebpackPlugin({
+      chunks: ['bio'],
+      template: 'src/bio.hbs',
+      filename: 'bio/index.html',
     }),
     new MiniCssExtractPlugin({
       filename: '[name].[contenthash].css'
