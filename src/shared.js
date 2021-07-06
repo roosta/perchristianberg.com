@@ -15,7 +15,7 @@ export const elements = {
   navMusicContent: document.getElementById("nav-music-content"),
   navMusicBtn:     document.getElementById("nav-music-btn"),
   pips:            document.querySelectorAll(".pip"),
-  navItems:        document.querySelectorAll(".nav-item"),
+  // navItems:        document.querySelectorAll(".nav-item"),
 };
 
 
@@ -64,6 +64,12 @@ function onMouseLeave(e, state) {
     })
 
   }, 1000)
+}
+
+export function updatePageIndicator(page) {
+  let el = document.getElementById(`nav-${page}`);
+  el.classList.remove("text-opacity-50");
+  console.log(el);
 }
 
 export function attachListeners() {

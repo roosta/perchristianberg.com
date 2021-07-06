@@ -30,7 +30,7 @@ html,body {
 
 @layer components {
   .menu-item {
-    @apply font-menu text-white capitalize text-opacity-50 hover:text-opacity-100;
+    @apply font-menu text-white capitalize hover:text-opacity-100;
   }
 }
 

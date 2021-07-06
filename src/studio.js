@@ -1,7 +1,7 @@
 import './studio.css'
 
 import Splide from '@splidejs/splide';
-import { attachListeners, togglePips } from "./shared.js";
+import { attachListeners, togglePips, updatePageIndicator } from "./shared.js";
 import images from "../images.json";
 
 const carouselAnnotation = document.getElementById("carousel-annotation");
@@ -15,6 +15,7 @@ function updateAnnotation(index) {
 
 function main() {
   attachListeners();
+  updatePageIndicator("studio");
 
   let splide = new Splide(".splide", {
     pagination: false,
