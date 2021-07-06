@@ -3,18 +3,19 @@ let state = {
 };
 
 export const elements = {
-  overlay:        document.getElementById("slide-overlay"),
-  panel:          document.getElementById("slide-panel"),
-  container:      document.getElementById("slide-container"),
-  openBtn:        document.getElementById("slide-menu-btn"),
-  closeBtn:       document.getElementById("slide-close-btn"),
-  main:           document.getElementById("main"),
-  collapseBtn:    document.getElementById("collapse-btn"),
-  collapseMenu:   document.getElementById("collapse-menu"),
-  submenu:        document.getElementById("submenu"),
-  submenuContent: document.getElementById("submenu-content"),
-  submenuBtn:     document.getElementById("submenu-btn"),
-  pips:           document.querySelectorAll(".pip"),
+  overlay:         document.getElementById("slide-overlay"),
+  panel:           document.getElementById("slide-panel"),
+  container:       document.getElementById("slide-container"),
+  openBtn:         document.getElementById("slide-menu-btn"),
+  closeBtn:        document.getElementById("slide-close-btn"),
+  main:            document.getElementById("main"),
+  collapseBtn:     document.getElementById("collapse-btn"),
+  collapseMenu:    document.getElementById("collapse-menu"),
+  navMusic:        document.getElementById("nav-music"),
+  navMusicContent: document.getElementById("nav-music-content"),
+  navMusicBtn:     document.getElementById("nav-music-btn"),
+  pips:            document.querySelectorAll(".pip"),
+  navItems:        document.querySelectorAll(".nav-item"),
 };
 
 
@@ -37,28 +38,28 @@ function onMenuClose(e) {
     elements.main.classList.toggle("overflow-hidden")
     this.removeEventListener("transitionend", f);
   })
-};
+}
 
-function onCollapse(e) {
+function onCollapse() {
   elements.collapseMenu.classList.toggle("hidden");
   const svgs = document.querySelectorAll("#collapse-btn > svg");
   svgs.forEach(svg => svg.classList.toggle("hidden"));
 
-};
+}
 
 function onMouseEnter(e, state) {
-  elements.submenuContent.classList.remove("invisible");
-  elements.submenuContent.classList.replace("opacity-0", "opacity-100");
-  elements.submenuContent.classList.replace("scale-95", "scale-100");
+  elements.navMusicContent.classList.remove("invisible");
+  elements.navMusicContent.classList.replace("opacity-0", "opacity-100");
+  elements.navMusicContent.classList.replace("scale-95", "scale-100");
   clearTimeout(state.timer);
-};
+}
 
 function onMouseLeave(e, state) {
-  state.timer = setTimeout((e) => {
-    elements.submenuContent.classList.replace("opacity-100", "opacity-0");
-    elements.submenuContent.classList.replace("scale-100", "scale-95");
-    elements.submenuContent.addEventListener("transitionend", function f() {
-      elements.submenuContent.classList.add("invisible");
+  state.timer = setTimeout(() => {
+    elements.navMusicContent.classList.replace("opacity-100", "opacity-0");
+    elements.navMusicContent.classList.replace("scale-100", "scale-95");
+    elements.navMusicContent.addEventListener("transitionend", function f() {
+      elements.navMusicContent.classList.add("invisible");
       this.removeEventListener("transitionend", f);
 
     })
@@ -71,9 +72,9 @@ export function attachListeners() {
   elements.openBtn.addEventListener("click", onMenuOpen);
   elements.overlay.addEventListener("click", onMenuClose);
   elements.collapseBtn.addEventListener("click", onCollapse);
-  elements.submenu.addEventListener("mouseenter", (e) => onMouseEnter(e, state));
-  elements.submenu.addEventListener("mouseleave", (e) => onMouseLeave(e, state));
-};
+  elements.navMusic.addEventListener("mouseenter", (e) => onMouseEnter(e, state));
+  elements.navMusic.addEventListener("mouseleave", (e) => onMouseLeave(e, state));
+}
 
 export function togglePips(splideIndex) {
   elements.pips.forEach((p, i) => {
