@@ -1,19 +1,27 @@
 {
   "index": [
     {
-      "url": "https://res.cloudinary.com/dvkodtgl9/image/upload/c_scale,q_auto:good,w_2000/v1624978293/perchristianberg.no/index1.jpg",
+      "url": "https://res.cloudinary.com/dvkodtgl9/image/upload/c_scale,q_auto:good,w_1440/v1629728364/perchristianberg.com/index/christian-berg.jpg",
       "annotation": "Vestibulum ut sem imperdiet, sollicitudin."
     },
     {
-      "url": "https://res.cloudinary.com/dvkodtgl9/image/upload/c_scale,q_auto:good,w_2000/v1624978293/perchristianberg.no/index2.jpg",
+      "url": "https://res.cloudinary.com/dvkodtgl9/image/upload/c_scale,q_auto:good,w_1440/v1629728364/perchristianberg.com/index/skog-refleksjon.jpg",
       "annotation": "Vivamus imperdiet scelerisque."
     },
     {
-      "url": "https://res.cloudinary.com/dvkodtgl9/image/upload/c_scale,q_auto:good,w_2000/v1624978293/perchristianberg.no/index3.jpg",
+      "url": "https://res.cloudinary.com/dvkodtgl9/image/upload/c_scale,q_auto:good,w_1440/v1629728364/perchristianberg.com/index/hydrous.jpg",
       "annotation": "Integer urna massa."
     },
     {
-      "url": "https://res.cloudinary.com/dvkodtgl9/image/upload/c_scale,q_auto:good,w_2000/v1624978293/perchristianberg.no/index4.jpg",
+      "url": "https://res.cloudinary.com/dvkodtgl9/image/upload/c_scale,q_auto:good,w_1440/v1629728364/perchristianberg.com/index/andra-vaerden.jpg",
+      "annotation": "Fusce accumsan orci a augue."
+    },
+    {
+      "url": "https://res.cloudinary.com/dvkodtgl9/image/upload/c_scale,q_auto:good,w_1440/v1629728364/perchristianberg.com/index/vann.jpg",
+      "annotation": "Fusce accumsan orci a augue."
+    },
+    {
+      "url": "https://res.cloudinary.com/dvkodtgl9/image/upload/c_scale,q_auto:good,w_1440/v1629728364/perchristianberg.com/index/skog-i-prisme.jpg",
       "annotation": "Fusce accumsan orci a augue."
     }
   ],
