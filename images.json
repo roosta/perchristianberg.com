@@ -14,69 +14,29 @@
     },
     {
       "url": "https://res.cloudinary.com/dvkodtgl9/image/upload/c_scale,q_auto:good,w_1440/v1629728364/perchristianberg.com/index/andra-vaerden.jpg",
-      "annotation": "Fusce accumsan orci a augue."
+      "annotation": ""
     },
     {
       "url": "https://res.cloudinary.com/dvkodtgl9/image/upload/c_scale,q_auto:good,w_1440/v1629728364/perchristianberg.com/index/vann.jpg",
-      "annotation": "Fusce accumsan orci a augue."
+      "annotation": "Nunc ac malesuada nulla, eget bibendum."
     },
     {
       "url": "https://res.cloudinary.com/dvkodtgl9/image/upload/c_scale,q_auto:good,w_1440/v1629728364/perchristianberg.com/index/skog-i-prisme.jpg",
-      "annotation": "Fusce accumsan orci a augue."
+      "annotation": ""
     }
   ],
   "studio": [
     {
-      "url": "https://res.cloudinary.com/dvkodtgl9/image/upload/c_scale,q_auto:good,w_2000/v1624978293/perchristianberg.no/studio1.jpg",
+      "url": "https://res.cloudinary.com/dvkodtgl9/image/upload/c_scale,q_auto:good,w_1440/v1629728364/perchristianberg.com/studio/neve-r3.jpg",
       "annotation": "Orci varius natoque penatibus et."
     },
     {
-      "url": "https://res.cloudinary.com/dvkodtgl9/image/upload/c_scale,q_auto:good,w_2000/v1624978293/perchristianberg.no/studio2.jpg",
-      "annotation": "In sit amet diam tincidunt."
-    },
-    {
-      "url": "https://res.cloudinary.com/dvkodtgl9/image/upload/c_scale,q_auto:good,w_2000/v1624978293/perchristianberg.no/studio3.jpg",
-      "annotation": ""
-    },
-    {
-      "url": "https://res.cloudinary.com/dvkodtgl9/image/upload/c_scale,q_auto:good,w_2000/v1624978293/perchristianberg.no/studio4.jpg",
+      "url": "https://res.cloudinary.com/dvkodtgl9/image/upload/c_scale,q_auto:good,w_1440/v1629728364/perchristianberg.com/studio/kontrolrom1.jpg",
       "annotation": "Aliquam erat volutpat. Proin non justo."
     },
     {
-      "url": "https://res.cloudinary.com/dvkodtgl9/image/upload/c_scale,q_auto:good,w_2000/v1624978293/perchristianberg.no/studio5.jpg",
-      "annotation": "Donec quis bibendum nunc. Fusce vel."
-    },
-    {
-      "url": "https://res.cloudinary.com/dvkodtgl9/image/upload/c_scale,q_auto:good,w_2000/v1624978293/perchristianberg.no/studio6.jpg",
-      "annotation": "Nulla ullamcorper pulvinar suscipit. Maecenas neque."
-    },
-    {
-      "url": "https://res.cloudinary.com/dvkodtgl9/image/upload/c_scale,q_auto:good,w_2000/v1624978293/perchristianberg.no/studio7.jpg",
-      "annotation": "Sed gravida auctor dolor, sit amet."
-    },
-    {
-      "url": "https://res.cloudinary.com/dvkodtgl9/image/upload/c_scale,q_auto:good,w_2000/v1624978293/perchristianberg.no/studio8.jpg",
-      "annotation": "Mauris condimentum pharetra aliquam. Sed ornare."
-    },
-    {
-      "url": "https://res.cloudinary.com/dvkodtgl9/image/upload/c_scale,q_auto:good,w_2000/v1624978293/perchristianberg.no/studio9.jpg",
-      "annotation": "Aliquam vulputate est eget laoreet efficitur."
-    },
-    {
-      "url": "https://res.cloudinary.com/dvkodtgl9/image/upload/c_scale,q_auto:good,w_2000/v1624978293/perchristianberg.no/studio10.jpg",
+      "url": "https://res.cloudinary.com/dvkodtgl9/image/upload/c_scale,q_auto:good,w_1440/v1629728364/perchristianberg.com/studio/ua-1.jpg",
       "annotation": "Nam ullamcorper mauris a arcu interdum."
-    },
-    {
-      "url": "https://res.cloudinary.com/dvkodtgl9/image/upload/c_scale,q_auto:good,w_2000/v1624978293/perchristianberg.no/studio11.jpg",
-      "annotation": "Nunc ac malesuada nulla, eget bibendum."
-    },
-    {
-      "url": "https://res.cloudinary.com/dvkodtgl9/image/upload/c_scale,q_auto:good,w_2000/v1624978293/perchristianberg.no/studio12.jpg",
-      "annotation": ""
-    },
-    {
-      "url": "https://res.cloudinary.com/dvkodtgl9/image/upload/c_scale,q_auto:good,w_2000/v1624978293/perchristianberg.no/studio13.jpg",
-      "annotation": ""
     }
   ]
 }
