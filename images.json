@@ -38,5 +38,15 @@
       "url": "https://res.cloudinary.com/dvkodtgl9/image/upload/c_scale,q_auto:good,w_1440/v1629728364/perchristianberg.com/studio/ua-1.jpg",
       "annotation": "Nam ullamcorper mauris a arcu interdum."
     }
+  ],
+  "bio": [
+    {
+      "url": "https://res.cloudinary.com/dvkodtgl9/image/upload/c_scale,q_auto:good,w_1440/v1629728364/perchristianberg.com/bio/andrea-vaerden.jpg",
+      "annotation": ""
+    },
+    {
+      "url": "https://res.cloudinary.com/dvkodtgl9/image/upload/c_scale,q_auto:good,w_1440/v1629728364/perchristianberg.com/bio/alfheimr.jpg",
+      "annotation": ""
+    }
   ]
 }
