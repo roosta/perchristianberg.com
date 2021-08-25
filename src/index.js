@@ -10,7 +10,7 @@ const latestReleaseImg = document.querySelectorAll(".latest-release-img");
 const pips = document.querySelectorAll(".pip");
 const carouselAnnotation = document.getElementById("carousel-annotation");
 
-const annotations = images.studio.map(item => item.annotation);
+const annotations = images.index.map(item => item.annotation);
 
 function updateAnnotation(index) {
   carouselAnnotation.innerHTML = annotations[index];
