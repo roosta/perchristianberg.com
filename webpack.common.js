@@ -84,6 +84,7 @@ module.exports = {
       chunks: ['bio'],
       template: 'src/bio.hbs',
       filename: 'bio/index.html',
+      images: images.bio,
     }),
     new MiniCssExtractPlugin({
       filename: '[name].[contenthash].css'
