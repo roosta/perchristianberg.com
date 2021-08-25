@@ -69,7 +69,6 @@ function onMouseLeave(e, state) {
 export function updatePageIndicator(page) {
   let el = document.getElementById(`nav-${page}`);
   el.classList.remove("text-opacity-50");
-  console.log(el);
 }
 
 export function attachListeners() {
