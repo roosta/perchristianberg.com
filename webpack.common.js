@@ -12,6 +12,7 @@ module.exports = {
     studio: './src/studio.js',
     bio: './src/bio.js',
     shared: './src/shared.js',
+    christian: './src/christian.js'
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -85,6 +86,11 @@ module.exports = {
       template: 'src/bio.hbs',
       filename: 'bio/index.html',
       images: images.bio,
+    }),
+    new HtmlWebpackPlugin({
+      chunks: ['christian'],
+      template: 'src/christian.hbs',
+      filename: 'music/christian/index.html',
     }),
     new MiniCssExtractPlugin({
       filename: '[name].[contenthash].css'
