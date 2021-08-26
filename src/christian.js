@@ -4,7 +4,7 @@ import { attachListeners, updatePageIndicator } from "./shared.js";
 
 function main() {
   attachListeners();
-  updatePageIndicator("music");
+  updatePageIndicator("music", "christian");
 }
 
 main();

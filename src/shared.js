@@ -66,8 +66,12 @@ function onMouseLeave(e, state) {
   }, 1000)
 }
 
-export function updatePageIndicator(page) {
-  let el = document.getElementById(`nav-${page}`);
+export function updatePageIndicator(page, subpage) {
+  const el = document.getElementById(`nav-${page}`);
+  if (subpage) {
+    const subEl = document.getElementById(`nav-music-${subpage}`)
+    subEl.classList.add("bg-gray-200");
+  }
   el.classList.remove("text-opacity-50");
 }
 
