@@ -75,6 +75,11 @@ export function updatePageIndicator(page, subpage) {
   el.classList.remove("text-opacity-50");
 }
 
+export function updateHeaderTitle(title) {
+  const el = document.getElementById("header-title");
+  el.innerHTML = title
+}
+
 export function attachListeners() {
   elements.closeBtn.addEventListener("click", onMenuClose);
   elements.openBtn.addEventListener("click", onMenuOpen);
