@@ -5,7 +5,7 @@ import { attachListeners, updatePageIndicator, updateHeaderTitle } from "./share
 function main() {
   attachListeners();
   updatePageIndicator("music", "christian");
-  updateHeaderTitle("christian berg");
+  // updateHeaderTitle("christian berg");
 }
 
 main();
