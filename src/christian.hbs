@@ -22,11 +22,12 @@
       <main class="my-24 flex justify-between flex-wrap lg:p-0 p-4">
 
         <section aria-label="Project and section headline" class="flex justify-between w-full flex-wrap">
-          <div class="text-white font-body lg:w-3/5 w-full mb-16 lg:mb-0">
+          <div class="text-white font-body w-full mb-16 lg:mb-0">
             Moving in the atmospheric landscapes from ambient to techno. Deeply inspired by nature and stillness.
           </div>
-          <h3 class="text-white font-display text-2xl uppercase text-opacity-50">discography</h3>
         </section>
+
+        <h3 class="text-white font-display text-2xl uppercase text-opacity-50 mt-16">discography</h3>
 
         {{> album
           aria-label="Album section skogsro"
@@ -52,6 +53,47 @@
             metus metus."
         }}
 
+        <div class="flex w-full flex-wrap">
+          <h3 class="text-white font-display text-2xl uppercase text-opacity-50">Mixes & Resources</h3>
+        </div>
+        <section aria-label="Mixes and resources section" class="w-full grid grid-cols-1 md:grid-cols-2 my-16 lg:my-24 items-center gap-4 lg:p-0">
+          <div>
+            <div class="text-white font-body w-full lg:w-4/5 mb-8">
+              For further information about how and where you can listen, here are some resources to check out if your interested.
+            </div>
+            <div class="grid gap-6 grid-cols-2 w-full lg:w-3/5">
+              <button class="icon-button">
+                <a href="https://open.spotify.com/artist/0kHutYBsThHxb4q2aUjn67?si=J7bipZ1aRSenDNEHMigcLg" target="_blank" class="flex justify-center">
+                  {{> icons/spotify class="h-6 w-6" }}
+                  <span class="ml-2">Spotify</span>
+                </a>
+              </button>
+              <button class="icon-button">
+                <a href="https://soundcloud.com/christian_berg1" target="_blank" class="flex justify-center">
+                  {{> icons/soundcloud class="h-6 w-6" }}
+                  <span class="ml-2">Soundcloud</span>
+                </a>
+              </button>
+              <button class="icon-button">
+                <a href="https://stereoscenic.bandcamp.com/album/skogsro" target="_blank" class="flex justify-center">
+                  {{> icons/bandcamp class="h-6 w-6" }}
+                  <span class="ml-2">Bandcamp</span>
+                </a>
+              </button>
+              <button class="icon-button">
+                <a href="https://www.instagram.com/per_christian_berg/" target="_blank" class="flex justify-center">
+                  {{> icons/instagram class="h-6 w-6" }}
+                  <span class="ml-2">Instagram</span>
+                </a>
+              </button>
+            </div>
+          </div>
+          <div>
+            <h3 class="mb-4 text-white font-display text-opacity-50 uppercase">Mixes</h3>
+            <div class="text-white font-body mb-10">Have a listen to a mix produced for Drivhuset Podcast</div>
+            <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/587897313&color=%2342545a&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/drivhuset-meraki" title="Drivhuset-Meraki" target="_blank" style="color: #cccccc; text-decoration: none;">Drivhuset-Meraki</a> · <a href="https://soundcloud.com/drivhuset-meraki/drivhuset-podcast-16-christian-berg-form-formless" title="Drivhuset Podcast #16 Christian Berg - Form, Formless" target="_blank" style="color: #cccccc; text-decoration: none;">Drivhuset Podcast #16 Christian Berg - Form, Formless</a></div>
+          </div>
+        </section>
       </main>
       {{> footer }}
     </div>
