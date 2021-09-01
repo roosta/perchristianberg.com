@@ -53,7 +53,7 @@ like.
 
 Copyright (c) 2021 Daniel Berg
 
-Source code distributed under [GNU General Public License v3.0](LICENSE)
+Source code distributed under [GNU General Public License v3.0](LICENSE) or later.
 
 Copyright (c) 2021 for original creative works and images featured on
 [perchristianberg.com](https://perchristianberg.com) are held by Per Christian
