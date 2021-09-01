@@ -2,7 +2,7 @@
   "name": "perchristianberg.com",
   "version": "0.0.1",
   "private": true,
-  "description": "Website for Per Christian Berg",
+  "description": "Website for musician Per Christian Berg",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "webpack --watch --config webpack.dev.js",
@@ -15,7 +15,7 @@
     "url": "git+https://github.com/roosta/perchristianberg.com.git"
   },
   "author": "Daniel Berg <mail@roosta.sh>",
-  "license": "ISC",
+  "license": "GPL-3.0-or-later",
   "bugs": {
     "url": "https://github.com/roosta/perchristianberg.com/issues"
   },
