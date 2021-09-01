@@ -49,6 +49,13 @@ npm run dist
 to have the website compiled to the `./dist` folder, then deploy however you
 like.
 
+## Assets
+
+The images used for the carousel is [images.json](images.json), and there are
+some images hardcoded into the HTML. If you are forking this project for
+whatever reason, these assets are not included in the GPL license and are not
+free to use, and are under different licenses.
+
 ## License
 
 Copyright (c) 2021 Daniel Berg
