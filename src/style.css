@@ -71,3 +71,6 @@ html,body {
 .gradient {
   background: linear-gradient(180deg, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0) 100%);
 }
+.hydrous-cover {
+  object-position: 50% 30%;
+}
