@@ -4,15 +4,14 @@
       <ul class="splide__list relative">
         {{#each htmlWebpackPlugin.options.images }}
           <li class="splide__slide">
-            <img src="{{this.url}}" class="h-screen sm:h-fixed object-cover w-full object-center" />
+            <img src="{{this}}" class="h-screen sm:h-fixed object-cover w-full object-center" />
           </li>
         {{/each}}
         <div class="absolute top-0 bottom-0 left-0 right-0 gradient"></div>
       </ul>
     </div>
   </div>
-  <div class="flex justify-center sm:justify-between h-1 font-body text-white text-opacity-50 pt-4 pl2 items-center">
-    <span id="carousel-annotation" class="hidden sm:block pl-4 lg:pl-0"></span>
+  <div class="flex justify-center h-1 font-body text-white text-opacity-50 pt-4 pl2 items-center">
     <div class="flex space-x-2 justify-center pr-4 lg:pr-0">
       {{#each htmlWebpackPlugin.options.images}}
         <div class="pip rounded-full w-3 h-3 transition-opacity duration-100 bg-white bg-opacity-30"></div>

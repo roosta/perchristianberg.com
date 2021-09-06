@@ -1,21 +1,11 @@
 import "./index.css"
 
 import Splide from "@splidejs/splide";
-import latestRelease from "../latest-release.json";
-import images from "../images.json";
 
-import { attachListeners, togglePips } from "./shared.js";
-
-const pips = document.querySelectorAll(".pip");
-const carouselAnnotation = document.getElementById("carousel-annotation");
-
-const annotations = images.index.map(item => item.annotation);
-
-function updateAnnotation(index) {
-  carouselAnnotation.innerHTML = annotations[index];
-}
+import { attachListeners, togglePips, updatePageIndicator } from "./shared.js";
 
 function main() {
+  updatePageIndicator("home");
   attachListeners();
   let splide = new Splide(".splide", {
     pagination: false,
@@ -25,9 +15,7 @@ function main() {
   togglePips(splide.index);
   splide.on("moved", () => {
     togglePips(splide.index);
-    updateAnnotation(splide.index);
   })
-  updateAnnotation(0);
 }
 
 main();
