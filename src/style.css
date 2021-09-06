@@ -38,6 +38,9 @@ html,body {
   .icon-button {
     @apply inline-block rounded font-display text-white ring-1 ring-white p-3 hover:bg-white hover:bg-opacity-10;
   }
+  .icon-button-disabled {
+    @apply cursor-not-allowed opacity-50 inline-block rounded font-display text-white ring-1 ring-white p-3;
+  }
 }
 
 #slide-container {
