@@ -15,7 +15,8 @@ module.exports = {
       fontSize: {
         'title2': ['5.5rem', 0.8],
         'title1': ['4.8rem', 0.8],
-        'screen': ['18vw', 0.8]
+        'screen': ['18vw', 0.8],
+        'project': ['17vw', 0.8]
       },
       screens: {
         '3xl': '1800px'
