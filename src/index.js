@@ -11,10 +11,11 @@ function main() {
   let splide = new Splide(".splide", {
     pagination: false,
     rewind: true,
-  }).mount();
+    index: 3
+  }).mount()
 
   // Randomize image show on front page
-  splide.index = Math.floor(Math.random() * (images.index.length))
+  // splide.index = Math.floor(Math.random() * (images.index.length))
 
   togglePips(splide.index);
   splide.on("moved", () => {
