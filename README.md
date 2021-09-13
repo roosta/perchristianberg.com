@@ -10,11 +10,14 @@ My goals with this website was to:
 
 - Create a more or less vanilla website using only HTML (handlebars in this
   case, DRY and all that), CSS and javascript. No frameworks or fancy reacts,
-  or vues, just get to grips with the basics.
+  or vues.
 
 - I chose `webpack` as my build tool, and that was the second goal. Get to
   grips with `webpack`. I've been using it for a long time but only through
   different added layers built on top, or indirectly.
+
+- I wanted to learn [tailwind](https://tailwindcss.com/), seemed like an
+  intresting library, and a perfect fit for a project like this.
 
 ## Installation
 
