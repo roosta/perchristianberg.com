@@ -20,19 +20,19 @@
             </a>
           </div>
           <nav class="flex-1" aria-label="Mobile navigation">
-            <div id="collapse-btn" class="flex items-center font-menu capitalize text-white cursor-pointer block px-4 py-2 hover:bg-white hover:bg-opacity-20" role="menuitem" aria-haspopup="true" aria-expanded="false">
+            <div id="collapse-btn" class="flex items-center font-menu capitalize text-white cursor-pointer block px-4 py-2 hover:bg-white hover:bg-opacity-20" role="menuitem" aria-haspopup="true" aria-expanded="true">
               <span class="">music</span>
-              {{> icons/chevron-down class="h-4 w-4 mx-3" }}
-              {{> icons/chevron-up class="hidden h-4 w-4 mx-3" }}
+              {{> icons/chevron-down class="hidden h-4 w-4 mx-3" }}
+              {{> icons/chevron-up class="h-4 w-4 mx-3" }}
             </div>
-            <div id="collapse-menu" class="hidden" >
-              <a href="/music/christian" class="font-menu capitalize block px-8 py-2 text-white hover:bg-white hover:bg-opacity-20" role="menuitem">Christian Berg</a>
-              <a href="/music/hydrous" class="font-menu capitalize block px-8 py-2 text-white hover:bg-white hover:bg-opacity-20" role="menuitem">Hydrous</a>
+            <div id="collapse-menu" class="" >
+              <a id="menu-music-christian" href="/music/christian" class="font-menu capitalize block px-8 py-2 text-white hover:bg-white hover:bg-opacity-20" role="menuitem">Christian Berg</a>
+              <a id="menu-music-hydrous" href="/music/hydrous" class="font-menu capitalize block px-8 py-2 text-white hover:bg-white hover:bg-opacity-20" role="menuitem">Hydrous</a>
             </div>
-            <a href="/" class="font-menu capitalize block px-4 py-2 text-white hover:bg-white hover:bg-opacity-20" role="menuitem">home</a>
+            <a id="menu-home" href="/" class="font-menu capitalize block px-4 py-2 text-white hover:bg-white hover:bg-opacity-20" role="menuitem">home</a>
             <!-- <a href="#" class="font-menu capitalize block px-4 py-2 text-white hover:bg-white hover:bg-opacity-20" role="menuitem">video</a> -->
-            <a href="/bio" class="font-menu capitalize block px-4 py-2 text-white hover:bg-white hover:bg-opacity-20" role="menuitem">bio</a>
-            <a href="/studio" class="font-menu capitalize block px-4 py-2 text-white hover:bg-white hover:bg-opacity-20" role="menuitem">studio</a>
+            <a id="menu-bio" href="/bio" class="font-menu capitalize block px-4 py-2 text-white hover:bg-white hover:bg-opacity-20" role="menuitem">bio</a>
+            <a id="menu-studio" href="/studio" class="font-menu capitalize block px-4 py-2 text-white hover:bg-white hover:bg-opacity-20" role="menuitem">studio</a>
           </nav>
           {{> icons class="text-white p-4 grid gap-6 grid-rows-2 grid-flow-col"}}
         </div>

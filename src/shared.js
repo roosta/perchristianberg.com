@@ -67,12 +67,18 @@ function onMouseLeave(e, state) {
 }
 
 export function updatePageIndicator(page, subpage) {
-  const el = document.getElementById(`nav-${page}`);
+  const navEl = document.getElementById(`nav-${page}`);
+  const menuEl = document.getElementById(`menu-${page}`)
   if (subpage) {
-    const subEl = document.getElementById(`nav-music-${subpage}`)
-    subEl.classList.add("bg-gray-200");
+    const navSub = document.getElementById(`nav-music-${subpage}`);
+    const menuSub = document.getElementById(`menu-music-${subpage}`);
+    navSub.classList.add("bg-gray-200");
+    menuSub.classList.add("bg-white", "bg-opacity-10")
   }
-  el.classList.remove("text-opacity-50");
+  if (menuEl) {
+    menuEl.classList.add("bg-white", "bg-opacity-10")
+  }
+  navEl.classList.remove("text-opacity-50");
 }
 
 export function updateHeaderTitle(title) {
