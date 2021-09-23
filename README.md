@@ -24,7 +24,7 @@ My goals with this website was to:
 Clone this repository and run npm install
 ```shell
 # Https
-$ git clone https://github.com/roosta/perchristianberg.com
+git clone https://github.com/roosta/perchristianberg.com
 # Or using ssh
 git clone git@github.com:roosta/perchristianberg.com.git
 
