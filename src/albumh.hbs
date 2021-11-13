@@ -1,18 +1,18 @@
 <section aria-label="{{ aria-label }}" class="lg:p-0 grid grid-cols-1 md:grid-cols-2 gap-0 md:gap-16 lg:gap-32 items-center">
-  <img alt="{{ img-alt }}"
-       src="{{ img-src }}"
+  <img alt="{{ image.alt }}"
+       src="{{ image.url }}"
        class="object-fit hidden shadow-xl sm:block">
   <div class="">
     <h3 class="text-white font-display mb-8 text-lg w-full lg:w-2/5 uppercase">{{ title }}</h3>
 
-    <img alt="{{ img-alt }}"
-         src="{{ img-src }}"
+    <img alt="{{ image.alt }}"
+         src="{{ image.url }}"
          class="object-fit block mb-8 sm:hidden shadow-xl">
 
     <div class="text-white font-body w-full lg:w-4/5 mb-8">
-      {{ body }}
+      {{ description }}
     </div>
-    <a href="{{ href }}" target="_blank" class="inline-block rounded font-display text-white ring-1 ring-white p-4 hover:bg-white hover:bg-opacity-10">
+    <a href="{{ link }}" target="_blank" class="inline-block rounded font-display text-white ring-1 ring-white p-4 hover:bg-white hover:bg-opacity-10">
       Listen now
     </a>
   </div>

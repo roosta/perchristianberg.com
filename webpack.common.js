@@ -2,9 +2,10 @@ const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const webpack = require('webpack');
-const latestRelease = require("./latest-release.json");
+// const webpack = require('webpack');
 const images = require("./images.json");
+
+const albums = require("./albums.json");
 
 module.exports = {
   entry: {
@@ -84,7 +85,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       chunks: ['index'],
       template: 'src/index.hbs',
-      latestRelease: latestRelease,
+      latestRelease: albums.latest,
       images: images.index,
     }),
     new HtmlWebpackPlugin({
@@ -102,11 +103,13 @@ module.exports = {
     new HtmlWebpackPlugin({
       chunks: ['christian'],
       template: 'src/christian.hbs',
+      albums: albums.christian,
       filename: 'music/christian/index.html',
     }),
     new HtmlWebpackPlugin({
       chunks: ['hydrous'],
       template: 'src/hydrous.hbs',
+      albums: albums.hydrous,
       filename: 'music/hydrous/index.html',
     }),
     new MiniCssExtractPlugin({

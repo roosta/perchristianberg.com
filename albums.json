@@ -1,0 +1,47 @@
+{
+  "latest": {
+    "title": "Hydrous - Elements",
+    "aria-label": "Latest release - Elements",
+    "description": "First release from my project Hydrous. Inspired by the mystical, meditative states, nature and magical moments on the dancefloor. Released in collaboration with the Swedish/Norwegian label Navigare Audio.",
+    "link": "https://li.sten.to/Hydrous-Elements",
+    "image": {
+      "url": "https://res.cloudinary.com/dvkodtgl9/image/upload/c_scale,q_auto,w_1000/v1636808644/perchristianberg.com/albums/hydrous-elements.jpg",
+      "alt": "Hydrous - Elements Cover Art"
+    }
+  },
+  "christian": {
+    "skogsro": {
+      "aria-label": "Album: Christian Berg - Skogsro",
+      "title": "Skogsro",
+      "description": "Released october 2020 on the American label Stereoscenic Records.",
+      "link": "https://li.sten.to/skogsro",
+      "image": {
+        "alt": "Skogsro album cover",
+        "url": "https://res.cloudinary.com/dvkodtgl9/image/upload/c_scale,q_auto,w_1000/v1630335001/perchristianberg.com/albums/skogsro"
+      }
+    },
+    "ikigai": {
+      "aria-label": "Album: Christian Berg - Ikigai",
+      "title": "Ikigai",
+      "description": "Released february 2020 on the Norwegian label Molt.",
+      "link": "https://li.sten.to/ikigai",
+      "image": {
+        "alt": "Ikigai album cover",
+        "url": "https://res.cloudinary.com/dvkodtgl9/image/upload/c_scale,q_auto,w_1000/v1630335001/perchristianberg.com/albums/ikigai"
+      }
+    }
+  },
+  "hydrous": {
+    "elements": {
+      "arian-label": "Album: Hydrous - Elements",
+      "title": "Elements",
+      "description": "Released november 2021 on Swedish/Norwegian label Navigare Audio",
+      "link": "https://li.sten.to/Hydrous-Elements",
+      "image": {
+        "url": "https://res.cloudinary.com/dvkodtgl9/image/upload/c_scale,q_auto,w_1000/v1636808644/perchristianberg.com/albums/hydrous-elements.jpg",
+        "alt": "Hydrous - Elements Cover Art"
+      }
+    }
+
+  }
+}
