@@ -1,14 +1,14 @@
 <section aria-label="Hero images carousel" class="">
   <div class="splide z-0">
-    <div class="splide__track">
-      <ul class="splide__list relative">
+    <div class="splide__track relative">
+      <ul class="splide__list">
         {{#each htmlWebpackPlugin.options.images }}
           <li class="splide__slide">
             <img src="{{this}}" class="h-screen sm:h-fixed object-cover w-full object-center" />
           </li>
         {{/each}}
-        <div class="absolute top-0 bottom-0 left-0 right-0 gradient"></div>
       </ul>
+      <div class="absolute top-0 bottom-0 left-0 right-0 gradient"></div>
     </div>
   </div>
   <div class="flex justify-center h-1 font-body text-white text-opacity-50 pt-4 pl2 items-center">
