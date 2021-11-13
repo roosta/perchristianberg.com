@@ -2,16 +2,12 @@ module.exports = {
   "env": {
     "browser": true,
     "node": true,
-    "es6": true
+    "es2021": true
   },
   "extends": "eslint:recommended",
-  "globals": {
-    "Atomics": "readonly",
-    "SharedArrayBuffer": "readonly"
-  },
   "parser": "@babel/eslint-parser",
   "parserOptions": {
-    "ecmaVersion": 2018,
+    "ecmaVersion": 13,
     "sourceType": "module"
   },
   "rules": {
