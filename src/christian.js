@@ -1,5 +1,5 @@
 import './christian.css'
-import { attachListeners, updatePageIndicator, updateHeaderTitle } from "./shared.js";
+import { attachListeners, updatePageIndicator } from "./shared.js";
 
 
 function main() {
