@@ -13,8 +13,7 @@ module.exports = merge(common, {
     host: '0.0.0.0',
     open: {
       app: {
-        name: "google-chrome-unstable",
-        arguments: ["--force-device-scale-factor=1"]
+        name: "firefox-developer-edition",
       }
     },
   }
