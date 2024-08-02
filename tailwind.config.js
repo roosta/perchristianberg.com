@@ -2,14 +2,13 @@ const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
   mode: 'jit',
-  purge: [
+  content: [
     './src/**/*.html',
     './src/**/*.hbs',
     './src/**/*.js',
     './dist/**/*.html',
     './dist/**/*.js',
   ],
-  darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
       fontSize: {
