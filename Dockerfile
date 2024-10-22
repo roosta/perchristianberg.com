@@ -1,4 +1,4 @@
-FROM node:latest as build-deps
+FROM node:latest AS build-deps
 WORKDIR /usr/src/app
 COPY package.json package-lock.json ./
 RUN npm install
