@@ -5,27 +5,27 @@
     </a>
     <div class="hidden sm:block">
       <nav id="main-nav" aria-label="Main navigation" class="flex space-x-4">
-        <div id="nav-music" class="cursor-pointer relative inline-block text-left font-menu text-white capitalize text-opacity-50 hover:text-opacity-100">
+        <div id="nav-music" class="cursor-pointer relative inline-block text-left font-menu text-white/50 capitalize hover:text-opacity-100">
           <a id="nav-music-btn" class="flex items-center" aria-haspopup="true" aria-expanded="false">
             <span>music</span>
             {{> icons/chevron-down class="h-4 w-4 pl-1" }}
           </a>
-          <div id="nav-music-content" class="mt-2 w-52 transition invisible opacity-0 transform scale-95 ease-out origin-top-left absolute left-0 shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="nav-music-btn">
+          <div id="nav-music-content" class="mt-2 w-52 transition invisible opacity-0 transform scale-95 ease-out origin-top-left absolute left-0 shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-hidden" role="menu" aria-orientation="vertical" aria-labelledby="nav-music-btn">
             <div class="py-1" role="none">
               <a id="nav-music-christian" href="/music/christian" class="font-menu block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Christian Berg</a>
               <a id="nav-music-hydrous"href="/music/hydrous" class="font-menu block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Hydrous</a>
             </div>
           </div>
         </div>
-        <!-- <a id="nav-video" class="menu-item text-opacity-50" href="#">video</a> -->
-        <a id="nav-home" class="menu-item text-opacity-50" href="/">home</a>
-        <a id="nav-bio" class="menu-item text-opacity-50" href="/bio">bio</a>
-        <a id="nav-studio" class="menu-item text-opacity-50" href="/studio">studio</a>
-        <a id="nav-contact" class="menu-item text-opacity-50" href="mailto:perchristianberg@gmail.com">Contact</a>
+        <!-- <a id="nav-video" class="menu-item text-white/50" href="#">video</a> -->
+        <a id="nav-home" class="menu-item text-white/50" href="/">home</a>
+        <a id="nav-bio" class="menu-item text-white/50" href="/bio">bio</a>
+        <a id="nav-studio" class="menu-item text-white/50" href="/studio">studio</a>
+        <a id="nav-contact" class="menu-item text-white/50" href="mailto:perchristianberg@gmail.com">Contact</a>
       </nav>
     </div>
     <div class="absolute sm:hidden">
-      <button id="slide-menu-btn" type="button" class="inline-flex items-center justify-center p-2 text-white hover:bg-white hover:bg-opacity-10 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+      <button id="slide-menu-btn" type="button" class="inline-flex items-center justify-center p-2 text-white hover:bg-white hover:bg-opacity-10 focus:outline-hidden focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
         <span class="sr-only">Open main menu</span>
         {{> icons/menu class="block h-6 w-6" }}
       </button>

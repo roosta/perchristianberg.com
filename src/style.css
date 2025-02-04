@@ -1,8 +1,42 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
 
-@import '~@splidejs/splide/dist/css/splide-core.min.css';
+@import '@splidejs/splide/dist/css/splide-core.min.css' layer(utilities);
+
+@config '../tailwind.config.js';
+
+/*
+  The default border color has changed to `currentColor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+}
+
+@utility menu-item {
+  @apply font-menu capitalize hover:text-white/100;
+}
+
+@utility link {
+  @apply text-blue-300 hover:text-blue-500;
+}
+
+@utility icon-button {
+  @apply inline-block rounded-sm font-display text-white ring-1 ring-white p-3 hover:bg-white/10;
+}
+
+@utility icon-button-disabled {
+  @apply cursor-not-allowed opacity-50 inline-block rounded-sm font-display text-white ring-1 ring-white p-3;
+}
 
 @layer base {
   @font-face {
@@ -24,22 +58,10 @@
   }
 }
 
-html,body {
-  height: 100%;
-}
-
-@layer components {
-  .menu-item {
-    @apply font-menu text-white capitalize hover:text-opacity-100;
-  }
-  .link {
-    @apply text-blue-300 hover:text-blue-500;
-  }
-  .icon-button {
-    @apply inline-block rounded font-display text-white ring-1 ring-white p-3 hover:bg-white hover:bg-opacity-10;
-  }
-  .icon-button-disabled {
-    @apply cursor-not-allowed opacity-50 inline-block rounded font-display text-white ring-1 ring-white p-3;
+@layer utilities {
+  html,
+  body {
+    height: 100%;
   }
 }
 

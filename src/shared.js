@@ -73,12 +73,12 @@ export function updatePageIndicator(page, subpage) {
     const navSub = document.getElementById(`nav-music-${subpage}`);
     const menuSub = document.getElementById(`menu-music-${subpage}`);
     navSub.classList.add("bg-gray-200");
-    menuSub.classList.add("bg-white", "bg-opacity-10")
+    menuSub.classList.add("bg-white/10")
   }
   if (menuEl) {
-    menuEl.classList.add("bg-white", "bg-opacity-10")
+    menuEl.classList.add("bg-white/10")
   }
-  navEl.classList.remove("text-opacity-50");
+  navEl.classList.replace("text-white/50", "text-white/100");
 }
 
 export function updateHeaderTitle(title) {
