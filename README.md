@@ -61,11 +61,11 @@ free to use, and are under different licenses.
 
 ## License
 
-Copyright (c) 2024 Daniel Berg
+Copyright (c) 2021 Daniel Berg
 
 Source code distributed under [GNU General Public License v3.0](LICENSE) or later.
 
-Copyright (c) 2024 for original creative works and images featured on
+Copyright (c) 2021 for original creative works and images featured on
 [perchristianberg.com](https://perchristianberg.com) are held by Per Christian
 Berg.
 
