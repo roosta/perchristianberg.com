@@ -98,9 +98,9 @@ export function attachListeners() {
 export function togglePips(splideIndex) {
   elements.pips.forEach((p, i) => {
     if (i === splideIndex) {
-      p.classList.remove("bg-opacity-30");
-    } else if (!p.classList.contains("bg-opacity-30")) {
-      p.classList.add("bg-opacity-30");
+      p.classList.replace("bg-white/30", "bg-white");
+    } else if (!p.classList.contains("bg-white/30")) {
+      p.classList.add("bg-white/30");
     }
   })
 }
