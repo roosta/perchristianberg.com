@@ -44,7 +44,7 @@
     "@babel/eslint-parser": "^7.26.8",
     "@babel/preset-env": "^7.26.9",
     "babel-loader": "^9.2.1",
-    "eslint": "^9.20.1",
+    "eslint": "^9.21.0",
     "handlebars": "^4.7.8",
     "htmlhint": "^1.1.4"
   }
