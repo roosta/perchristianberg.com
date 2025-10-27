@@ -21,21 +21,21 @@ My goals with this website was to:
 
 ## Installation
 
-Clone this repository and run npm install
+Clone this repository and run `pnpm install`
 ```shell
 # Https
 git clone https://github.com/roosta/perchristianberg.com
 # Or using ssh
 git clone git@github.com:roosta/perchristianberg.com.git
 
-cd perchristianberg.com && npm install
+cd perchristianberg.com && pnpm install
 ```
 
 ## Developing
 
 To start a server that will host a live reload serve of the page:
 ```sh
-npm start
+pnpm start
 ```
 The [dev config](webpack.dev.js) will try to open `google-chrome-unstable` with
 a forced device scale factor due to my personal screen setup, and will webpack
@@ -47,7 +47,7 @@ Included in the repo is a [Dockerfile](Dockerfile), you could use that to
 deploy the app with nginx. I personally use Dockerfiles and dokku setup on a
 digital ocean droplet, but you can just run
 ```sh
-npm run dist
+pnpm run dist
 ```
 to have the website compiled to the `./dist` folder, then deploy however you
 like.

@@ -1,9 +1,12 @@
-FROM node:20.18 AS build-deps
+FROM node:20-slim AS build-deps
 WORKDIR /usr/src/app
 COPY . ./
-RUN npm ci
-RUN npm run dist
+ENV PNPM_HOME="/pnpm"
+ENV PATH="$PNPM_HOME:$PATH"
+RUN corepack enable
 
+RUN pnpm install
+RUN pnpm run dist
 
 # Nginx
 FROM nginx:latest
