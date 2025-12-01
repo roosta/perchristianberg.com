@@ -46,6 +46,6 @@
     "babel-loader": "^10.0.0",
     "eslint": "^9.39.1",
     "handlebars": "^4.7.8",
-    "htmlhint": "^1.7.1"
+    "htmlhint": "^1.8.0"
   }
 }
